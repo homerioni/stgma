@@ -1,0 +1,230 @@
+@import "param";
+
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 7.3rem;
+  padding: 0 6rem;
+  border-radius: 100rem;
+  background-color: #141720;
+
+  font-family: $druk;
+  font-weight: 500;
+  font-size: 2.1rem;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    z-index: -1;
+    display: block;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 100rem;
+    background: radial-gradient(94.31% 66.31% at -53.25% 10.23%, #FFFFFF 0%, rgba(255, 255, 255, 0.12) 100%),
+    radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%),
+    radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:hover {
+    box-shadow: 0 0 3rem 3px rgba(132, 112, 255, 0.2);
+  }
+
+  &--select {
+    padding: 0 3.5rem;
+
+    .button__icon {
+      width: 1.6rem;
+      height: 2.8rem;
+      margin-left: 2rem;
+      margin-top: 0;
+    }
+  }
+
+  &--slim {
+    height: 6rem;
+
+    &:after {
+      left: -1px;
+      top: -1px;
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+    }
+  }
+
+  &__icon {
+    width: 3.6rem;
+    height: 2.4rem;
+    margin-left: 1rem;
+    margin-top: 0.6rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+
+  &__text {
+    margin-right: 1rem;
+    transform: rotate(-9deg) translateY(60%);
+    font-size: 2.4rem;
+  }
+
+  &__icon {
+    width: 4rem;
+    height: 5.8rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.table {
+  &__row {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+
+    &--title {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__column {
+    flex: none;
+  }
+
+  &__column-title {
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #6F767E;
+  }
+
+  &__content {
+    padding: 5rem;
+    border-radius: 2rem;
+    background-color: #141720;
+  }
+}
+
+.tabs-table {
+  &--fill-bg-even {
+    .tabs-table__row {
+      min-height: 7.4rem;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+
+      &--title {
+        margin-bottom: 0;
+      }
+    }
+
+    .tabs-table__content > * {
+      &:nth-child(even) {
+        background: linear-gradient(90deg, rgba(33, 31, 47, 0) -11.24%, #211F2F 49.5%, rgba(33, 31, 47, 0) 107.76%);
+      }
+    }
+  }
+
+  &__tabs {
+    display: flex;
+  }
+
+  &__tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 34.3rem;
+    height: 9rem;
+    padding: 0 2rem;
+    border-radius: 2rem 2rem 0 0;
+    cursor: pointer;
+
+    font-family: $druk;
+    font-weight: 500;
+    font-size: 2.1rem;
+
+    &.active {
+      position: relative;
+      background-color: #141720;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(269.86deg, #653AEC 42.17%, #EB81C8 100.03%),
+        linear-gradient(0deg, #FFFFFF, #FFFFFF);
+        box-shadow: 0 2px 4px 0 rgba(255, 147, 189, 0.4);
+      }
+    }
+  }
+
+  &__tab-content {
+    padding: 5rem;
+    border-radius: 0 2rem 2rem 2rem;
+    background-color: #141720;
+
+    > input {
+      display: none;
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+
+    &--title {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__column-title {
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #6F767E;
+  }
+
+  &__column {
+    flex: none;
+  }
+
+  &__content {
+  }
+}
