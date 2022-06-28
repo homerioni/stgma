@@ -18,12 +18,13 @@ body {
 
   &__container {
     display: flex;
+    border-left: 1px solid rgba(157, 153, 175, 0.1);
+    border-right: 1px solid rgba(157, 153, 175, 0.1);
   }
 
   &__contacts {
     padding: 6rem 0 0 1rem;
     margin-right: auto;
-    border-left: 1px solid rgba(157, 153, 175, 0.1);
   }
 
   &__logo {
@@ -87,7 +88,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.5rem 0;
+    padding: 2.5rem 1rem;
+    border-left: 1px solid rgba(157, 153, 175, 0.1);
+    border-right: 1px solid rgba(157, 153, 175, 0.1);
   }
 
   &__copyright {
