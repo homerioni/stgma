@@ -113,7 +113,10 @@
     }
 
     &--title {
-      margin-bottom: 3rem;
+      &:first-child {
+        margin-bottom: 3rem;
+        padding: 0 5rem;
+      }
     }
   }
 
