@@ -1,0 +1,84 @@
+@import "param";
+
+.basic-coin {
+  margin-bottom: 18.5rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 36.4rem;
+    height: 24.1rem;
+    padding: 3rem 0 2.3rem 3rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1674);
+    background-color: #141720;
+    overflow: hidden;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 14.3rem;
+      height: 14.3rem;
+    }
+
+    &:nth-child(4n + 1),
+    &:nth-child(4n + 3) {
+      &:before {
+        content: '';
+        background: linear-gradient(180deg, rgba(91, 112, 231, 0.31) 0%, rgba(91, 112, 231, 0) 100%);
+        filter: blur(5rem);
+      }
+    }
+
+    &:nth-child(4n + 2) {
+      &:before {
+        content: '';
+        background: linear-gradient(180deg, #5B70E7 0%, rgba(91, 112, 231, 0) 100%);
+        filter: blur(5rem);
+      }
+    }
+  }
+
+  &__img-box {
+    position: absolute;
+    right: 4rem;
+    top: 50%;
+    width: 11rem;
+    height: 11rem;
+    transform: translateY(-50%);
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__box {
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    font-size: 2.5rem;
+    letter-spacing: 0.05em;
+  }
+
+  &__trend {
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+}

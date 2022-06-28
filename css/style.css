@@ -545,6 +545,12 @@ body {
   position: absolute;
   z-index: -1;
 }
+.main-intro__bg > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .main-intro__bg--crystal {
   left: 0;
   top: 10.5rem;
@@ -553,15 +559,14 @@ body {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
 }
-.main-intro__bg--crystal > img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
 .main-intro__bg--cards {
-  right: -10rem;
+  right: 0;
   top: 0;
+  overflow: hidden;
+}
+.main-intro__bg--cards > img {
+  -webkit-transform: translateX(10rem);
+          transform: translateX(10rem);
 }
 .main-intro__container {
   position: relative;
@@ -609,6 +614,7 @@ body {
   font-weight: bold;
   font-size: 7.2rem;
   line-height: 6.3rem;
+  text-transform: uppercase;
 }
 .main-intro__desc {
   width: 50.5rem;
@@ -623,6 +629,88 @@ body {
   margin: 12rem auto 0 auto;
   -webkit-transform: translateX(-5rem);
           transform: translateX(-5rem);
+}
+
+.basic-coin {
+  margin-bottom: 18.5rem;
+}
+.basic-coin__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.basic-coin__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 36.4rem;
+  height: 24.1rem;
+  padding: 3rem 0 2.3rem 3rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1674);
+  background-color: #141720;
+  overflow: hidden;
+}
+.basic-coin__item:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 14.3rem;
+  height: 14.3rem;
+}
+.basic-coin__item:nth-child(4n+1):before, .basic-coin__item:nth-child(4n+3):before {
+  content: "";
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(91, 112, 231, 0.31)), to(rgba(91, 112, 231, 0)));
+  background: linear-gradient(180deg, rgba(91, 112, 231, 0.31) 0%, rgba(91, 112, 231, 0) 100%);
+  -webkit-filter: blur(5rem);
+          filter: blur(5rem);
+}
+.basic-coin__item:nth-child(4n+2):before {
+  content: "";
+  background: -webkit-gradient(linear, left top, left bottom, from(#5B70E7), to(rgba(91, 112, 231, 0)));
+  background: linear-gradient(180deg, #5B70E7 0%, rgba(91, 112, 231, 0) 100%);
+  -webkit-filter: blur(5rem);
+          filter: blur(5rem);
+}
+.basic-coin__img-box {
+  position: absolute;
+  right: 4rem;
+  top: 50%;
+  width: 11rem;
+  height: 11rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.basic-coin__img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.basic-coin__name {
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.basic-coin__price {
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+}
+.basic-coin__trend {
+  font-weight: 600;
+  font-size: 2.5rem;
 }
 
 html {
