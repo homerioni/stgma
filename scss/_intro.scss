@@ -1,0 +1,31 @@
+@import "param";
+
+.intro {
+  margin: 8rem 0 23rem 0;
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+
+    > img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    width: 62rem;
+    margin: 0 auto 5rem auto;
+    font-family: $druk;
+    font-weight: 500;
+    font-size: 7.4rem;
+    text-transform: uppercase;
+  }
+
+  &__scroll {
+    margin: 0 auto;
+  }
+}
