@@ -1576,9 +1576,100 @@ body {
   font-weight: 500;
   font-size: 7.4rem;
   text-transform: uppercase;
+  text-align: center;
 }
 .intro__scroll {
   margin: 0 auto;
+}
+
+.check-list {
+  margin-bottom: 18rem;
+}
+.check-list__title {
+  width: 75rem;
+  margin: 0 auto 4rem auto;
+  font-family: "Druk Wide Cyr";
+  font-weight: 500;
+  font-size: 5.5rem;
+  text-align: center;
+}
+.check-list__desc {
+  width: 56.5rem;
+  margin: 0 auto 4rem auto;
+  font-size: 2rem;
+  text-align: center;
+}
+.check-list__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.check-list__item {
+  position: relative;
+  width: 48rem;
+  padding: 4rem;
+  border-radius: 2rem;
+  background-color: #141720;
+}
+.check-list__item:before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  z-index: -1;
+  display: block;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  border-radius: 2rem;
+  background: radial-gradient(94.31% 66.31% at -53.25% 10.23%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%), radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%), radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%), -webkit-gradient(linear, left bottom, left top, from(#141720), to(#141720));
+  background: radial-gradient(94.31% 66.31% at -53.25% 10.23%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%), radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%), radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #141720, #141720);
+}
+.check-list__item:nth-child(3n+1) {
+  margin-right: 6rem;
+}
+.check-list__item:nth-child(3n) {
+  margin-left: auto;
+}
+.check-list__item:nth-child(n+4) {
+  margin-top: 6rem;
+}
+.check-list__star-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8rem;
+}
+.check-list__star {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-right: 0.5rem;
+}
+.check-list__star > img {
+  width: 400%;
+  height: 400%;
+}
+.check-list__item-title {
+  margin-bottom: 2rem;
+  font-family: "Druk Wide Cyr";
+  font-weight: 500;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+}
+.check-list__item-desc {
+  width: 33.7rem;
+  font-size: 2rem;
 }
 
 html {
