@@ -33,7 +33,7 @@ const rem = function (rem) {
 const new_crypto_slider = new Swiper('.new-crypto__slider', {
     direction: 'horizontal',
     slidesPerView: 3,
-    spaceBetween: 50,
+    spaceBetween: rem(5),
 
     grid: {
         rows: 2,

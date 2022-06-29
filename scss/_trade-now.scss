@@ -1,0 +1,115 @@
+@import "param";
+
+.trade-now {
+  margin-bottom: 25rem;
+
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 7.5rem 3.7rem 6.3rem 7rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    background: rgba(20, 23, 32, 0.8);
+    backdrop-filter: blur(40px);
+  }
+
+  &__text-block {
+    flex: none;
+    width: 63.6rem;
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+    font-family: $druk;
+    font-weight: 500;
+    font-size: 5.2rem;
+  }
+
+  &__desc {
+    margin-bottom: 4rem;
+    font-size: 2rem;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn-now {
+    margin-right: 4rem;
+    background-color: rgb(48, 49, 57);
+  }
+
+  &__btn-how {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  &__btn-how-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7.2rem;
+    height: 7.2rem;
+    margin-right: 1.6rem;
+    border-radius: 100%;
+    background-color: rgb(48, 49, 57);
+
+    > svg {
+      width: 1.5rem;
+      height: 2.3rem;
+      transform: translateX(0.3rem);
+
+      path {
+        fill: white;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 0 3rem 3px rgba(132, 112, 255, 0.2);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      z-index: -1;
+      display: block;
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      border-radius: 100rem;
+      background: radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%),
+      radial-gradient(111.14% 111.14% at 8.37% 0%, rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(94.31% 66.31% at -53.25% 10.23%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%);
+    }
+  }
+
+  &__img-box {
+    position: absolute;
+    right: -6rem;
+    top: -21rem;
+    width: 98rem;
+    height: 92rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+}

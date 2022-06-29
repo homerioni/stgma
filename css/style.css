@@ -372,7 +372,7 @@ input[type=number] {
       -ms-flex: none;
           flex: none;
 }
-.body-bg--main {
+.body-bg {
   position: absolute;
   left: 0;
   top: 0;
@@ -380,7 +380,9 @@ input[type=number] {
   display: block;
   width: 100%;
   height: 100%;
-  background: url("../img/main-bg.svg");
+}
+.body-bg--main {
+  background: url("../img/main-bg.svg") no-repeat;
 }
 
 .header__container {
@@ -580,6 +582,8 @@ body {
 .main-intro__bg--cards {
   right: 0;
   top: 0;
+  width: 112.2rem;
+  height: 113.9rem;
   overflow: hidden;
 }
 .main-intro__bg--cards > img {
@@ -1255,6 +1259,165 @@ body {
   font-weight: 400;
   opacity: 0.4;
 }
+.trade-now {
+  margin-bottom: 25rem;
+}
+.trade-now__content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 7.5rem 3.7rem 6.3rem 7rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.trade-now__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  background: rgba(20, 23, 32, 0.8);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
+.trade-now__text-block {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 63.6rem;
+}
+.trade-now__title {
+  margin-bottom: 4rem;
+  font-family: "Druk Wide Cyr";
+  font-weight: 500;
+  font-size: 5.2rem;
+}
+.trade-now__desc {
+  margin-bottom: 4rem;
+  font-size: 2rem;
+}
+.trade-now__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.trade-now__btn-now {
+  margin-right: 4rem;
+  background-color: rgb(48, 49, 57);
+}
+.trade-now__btn-how {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+}
+.trade-now__btn-how-icon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 7.2rem;
+  height: 7.2rem;
+  margin-right: 1.6rem;
+  border-radius: 100%;
+  background-color: rgb(48, 49, 57);
+}
+.trade-now__btn-how-icon > svg {
+  width: 1.5rem;
+  height: 2.3rem;
+  -webkit-transform: translateX(0.3rem);
+          transform: translateX(0.3rem);
+}
+.trade-now__btn-how-icon > svg path {
+  fill: white;
+}
+.trade-now__btn-how-icon:hover {
+  -webkit-box-shadow: 0 0 3rem 3px rgba(132, 112, 255, 0.2);
+          box-shadow: 0 0 3rem 3px rgba(132, 112, 255, 0.2);
+}
+.trade-now__btn-how-icon:after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  z-index: -1;
+  display: block;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  border-radius: 100rem;
+  background: radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%), radial-gradient(111.14% 111.14% at 8.37% 0%, rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(94.31% 66.31% at -53.25% 10.23%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%);
+}
+.trade-now__img-box {
+  position: absolute;
+  right: -6rem;
+  top: -21rem;
+  width: 98rem;
+  height: 92rem;
+}
+.trade-now__img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.partners-min {
+  margin-bottom: 17rem;
+}
+.partners-min__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.partners-min__item {
+  position: relative;
+  -webkit-box-flex: 15%;
+      -ms-flex: 15%;
+          flex: 15%;
+  max-width: 35rem;
+  margin-right: 13rem;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.partners-min__item > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.partners-min__item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.partners-min__item:nth-child(4n) {
+  margin-right: 0;
+}
+.partners-min__item:nth-child(n+5) {
+  margin-top: 10rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
