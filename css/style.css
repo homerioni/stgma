@@ -366,6 +366,17 @@ input[type=number] {
       -ms-flex: none;
           flex: none;
 }
+.body-bg--main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../img/main-bg.svg");
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -756,6 +767,22 @@ body {
 }
 .crypto__more-link > svg path {
   stroke: white;
+}
+.crypto__table .table__row {
+  padding: 2.5rem 0;
+}
+.crypto__table .table__row:hover {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-11.24%, rgba(33, 31, 47, 0)), color-stop(49.5%, #211F2F), color-stop(107.76%, rgba(33, 31, 47, 0)));
+  background: linear-gradient(90deg, rgba(33, 31, 47, 0) -11.24%, #211F2F 49.5%, rgba(33, 31, 47, 0) 107.76%);
+}
+.crypto__table .table__row:not(:last-child) {
+  margin-bottom: 0;
+}
+.crypto__table .table__row:first-child {
+  margin-top: -2.5rem;
+}
+.crypto__table .table__row:last-child {
+  margin-bottom: -2.5rem;
 }
 .crypto__table .table__column {
   font-size: 2rem;
