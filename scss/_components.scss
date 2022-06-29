@@ -111,13 +111,13 @@
     &:not(:last-child) {
       margin-bottom: 5rem;
     }
+  }
 
-    &--title {
-      &:first-child {
-        margin-bottom: 3rem;
-        padding: 0 5rem;
-      }
-    }
+  &__row-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 0 5rem;
   }
 
   &__column {
