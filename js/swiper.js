@@ -29,3 +29,18 @@ const rem = function (rem) {
         return (100/375) * (0.1 * $(window).width()) * rem;
     }
 }
+
+const new_crypto_slider = new Swiper('.new-crypto__slider', {
+    direction: 'horizontal',
+    slidesPerView: 3,
+    spaceBetween: 50,
+
+    grid: {
+        rows: 2,
+        fill: 'row',
+    },
+
+    autoplay: {
+        duration: 3000,
+    },
+});
