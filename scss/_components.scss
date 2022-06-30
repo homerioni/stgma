@@ -107,9 +107,10 @@
   &__row {
     display: flex;
     align-items: center;
+    padding: 2.5rem 0;
 
-    &:not(:last-child) {
-      margin-bottom: 5rem;
+    &:hover {
+      background: linear-gradient(90deg, rgba(33, 31, 47, 0) -11.24%, #211F2F 49.5%, rgba(33, 31, 47, 0) 107.76%);
     }
   }
 
@@ -131,30 +132,16 @@
   }
 
   &__content {
-    padding: 5rem;
+    padding: 2.5rem 5rem;
     border-radius: 2rem;
     background-color: #141720;
   }
 }
 
 .tabs-table {
-  &--fill-bg-even {
-    .tabs-table__row {
-      min-height: 7.4rem;
-
-      &:not(:last-child) {
-        margin-bottom: 0;
-      }
-
-      &--title {
-        margin-bottom: 0;
-      }
-    }
-
-    .tabs-table__content > * {
-      &:nth-child(even) {
-        background: linear-gradient(90deg, rgba(33, 31, 47, 0) -11.24%, #211F2F 49.5%, rgba(33, 31, 47, 0) 107.76%);
-      }
+  &--bg-even {
+    .table__content > *:nth-child(even) {
+      background: linear-gradient(90deg, rgba(33, 31, 47, 0) -11.24%, #211F2F 49.5%, rgba(33, 31, 47, 0) 107.76%);
     }
   }
 
@@ -175,6 +162,7 @@
     font-family: $druk;
     font-weight: 500;
     font-size: 2.1rem;
+    text-transform: uppercase;
 
     &.active {
       position: relative;
@@ -192,43 +180,40 @@
         linear-gradient(0deg, #FFFFFF, #FFFFFF);
         box-shadow: 0 2px 4px 0 rgba(255, 147, 189, 0.4);
       }
+
+      &:first-child {
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 100%;
+          display: block;
+          width: 2rem;
+          height: 2rem;
+          background-color: #141720;
+        }
+      }
     }
   }
 
   &__tab-content {
-    padding: 5rem;
-    border-radius: 0 2rem 2rem 2rem;
+    display: none;
+    padding: 5rem 5rem 2.5rem 5rem;
     background-color: #141720;
+    border-radius: 2rem;
 
     > input {
       display: none;
     }
-  }
 
-  &__row {
-    display: flex;
-    align-items: center;
-
-    &:not(:last-child) {
-      margin-bottom: 5rem;
+    &.active {
+      display: block;
     }
 
-    &--title {
-      margin-bottom: 3rem;
+    .table__content,
+    .table__row-title {
+      padding: 0;
     }
-  }
-
-  &__column-title {
-    font-weight: 600;
-    font-size: 1.7rem;
-    color: #6F767E;
-  }
-
-  &__column {
-    flex: none;
-  }
-
-  &__content {
   }
 }
 

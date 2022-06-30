@@ -257,9 +257,11 @@ input[type=number] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 2.5rem 0;
 }
-.table__row:not(:last-child) {
-  margin-bottom: 5rem;
+.table__row:hover {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-11.24%, rgba(33, 31, 47, 0)), color-stop(49.5%, #211F2F), color-stop(107.76%, rgba(33, 31, 47, 0)));
+  background: linear-gradient(90deg, rgba(33, 31, 47, 0) -11.24%, #211F2F 49.5%, rgba(33, 31, 47, 0) 107.76%);
 }
 .table__row-title {
   display: -webkit-box;
@@ -282,21 +284,12 @@ input[type=number] {
   color: #6F767E;
 }
 .table__content {
-  padding: 5rem;
+  padding: 2.5rem 5rem;
   border-radius: 2rem;
   background-color: #141720;
 }
 
-.tabs-table--fill-bg-even .tabs-table__row {
-  min-height: 7.4rem;
-}
-.tabs-table--fill-bg-even .tabs-table__row:not(:last-child) {
-  margin-bottom: 0;
-}
-.tabs-table--fill-bg-even .tabs-table__row--title {
-  margin-bottom: 0;
-}
-.tabs-table--fill-bg-even .tabs-table__content > *:nth-child(even) {
+.tabs-table--bg-even .table__content > *:nth-child(even) {
   background: -webkit-gradient(linear, left top, right top, color-stop(-11.24%, rgba(33, 31, 47, 0)), color-stop(49.5%, #211F2F), color-stop(107.76%, rgba(33, 31, 47, 0)));
   background: linear-gradient(90deg, rgba(33, 31, 47, 0) -11.24%, #211F2F 49.5%, rgba(33, 31, 47, 0) 107.76%);
 }
@@ -323,6 +316,7 @@ input[type=number] {
   font-family: "Druk Wide Cyr";
   font-weight: 500;
   font-size: 2.1rem;
+  text-transform: uppercase;
 }
 .tabs-table__tab.active {
   position: relative;
@@ -340,38 +334,33 @@ input[type=number] {
   -webkit-box-shadow: 0 2px 4px 0 rgba(255, 147, 189, 0.4);
           box-shadow: 0 2px 4px 0 rgba(255, 147, 189, 0.4);
 }
-.tabs-table__tab-content {
-  padding: 5rem;
-  border-radius: 0 2rem 2rem 2rem;
+.tabs-table__tab.active:first-child:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: block;
+  width: 2rem;
+  height: 2rem;
   background-color: #141720;
+}
+.tabs-table__tab-content {
+  display: none;
+  padding: 5rem 5rem 2.5rem 5rem;
+  background-color: #141720;
+  border-radius: 2rem;
 }
 .tabs-table__tab-content > input {
   display: none;
 }
-.tabs-table__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.tabs-table__tab-content.active {
+  display: block;
 }
-.tabs-table__row:not(:last-child) {
-  margin-bottom: 5rem;
+.tabs-table__tab-content .table__content,
+.tabs-table__tab-content .table__row-title {
+  padding: 0;
 }
-.tabs-table__row--title {
-  margin-bottom: 3rem;
-}
-.tabs-table__column-title {
-  font-weight: 600;
-  font-size: 1.7rem;
-  color: #6F767E;
-}
-.tabs-table__column {
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-}
+
 .body-bg {
   position: absolute;
   left: 0;
@@ -801,22 +790,6 @@ body {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
-.crypto__table .table__row {
-  padding: 2.5rem 0;
-}
-.crypto__table .table__row:hover {
-  background: -webkit-gradient(linear, left top, right top, color-stop(-11.24%, rgba(33, 31, 47, 0)), color-stop(49.5%, #211F2F), color-stop(107.76%, rgba(33, 31, 47, 0)));
-  background: linear-gradient(90deg, rgba(33, 31, 47, 0) -11.24%, #211F2F 49.5%, rgba(33, 31, 47, 0) 107.76%);
-}
-.crypto__table .table__row:not(:last-child) {
-  margin-bottom: 0;
-}
-.crypto__table .table__row:first-child {
-  margin-top: -2.5rem;
-}
-.crypto__table .table__row:last-child {
-  margin-bottom: -2.5rem;
-}
 .crypto__table .table__column {
   font-size: 2rem;
 }
@@ -886,6 +859,31 @@ body {
 .crypto__graph > img {
   width: 100%;
   height: 100%;
+}
+
+.crypto-tab {
+  margin-bottom: 23rem;
+}
+.crypto-tab__title {
+  margin-bottom: 6rem;
+  font-family: "Druk Wide Cyr";
+  font-weight: 500;
+  font-size: 5.5rem;
+}
+.crypto-tab__table .table__column {
+  font-size: 2rem;
+}
+.crypto-tab__table .table__column:nth-child(1) {
+  width: 7.1rem;
+}
+.crypto-tab__table .table__column:nth-child(2) {
+  width: 48rem;
+}
+.crypto-tab__table .table__column:nth-child(3) {
+  width: 21rem;
+}
+.crypto-tab__table .table__column:nth-child(4) {
+  width: 21rem;
 }
 
 .portable {
@@ -1825,6 +1823,159 @@ body {
 .type-doc__item-desc {
   width: 100%;
   font-size: 2rem;
+}
+
+.commis {
+  margin-bottom: 18rem;
+}
+.commis__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.commis__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 75.5rem;
+}
+.commis__title {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  min-height: 12rem;
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  font-family: "Druk Wide Cyr";
+  font-weight: 500;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  background-color: #141720;
+}
+.commis__title:after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  z-index: -1;
+  display: block;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  border-radius: 2rem;
+  background: radial-gradient(94.31% 66.31% at -53.25% 10.23%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%), radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%), radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%), -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.05)), to(rgba(255, 255, 255, 0.05)));
+  background: radial-gradient(94.31% 66.31% at -53.25% 10.23%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%), radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%), radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+}
+.commis__table {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  position: relative;
+  width: 100%;
+  padding: 4rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+.commis__table:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
+.commis__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 4.8rem;
+  font-size: 1.7rem;
+  letter-spacing: 0.05em;
+}
+.commis__row--title {
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 0;
+}
+.commis__row:nth-child(even) {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-11.24%, rgba(33, 31, 47, 0)), color-stop(49.5%, #211F2F), color-stop(107.76%, rgba(33, 31, 47, 0)));
+  background: linear-gradient(90deg, rgba(33, 31, 47, 0) -11.24%, #211F2F 49.5%, rgba(33, 31, 47, 0) 107.76%);
+}
+.commis__column {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+.commis__column:nth-child(1) {
+  width: 20rem;
+  margin-right: 1.4rem;
+}
+.commis__column:nth-child(2) {
+  width: 20rem;
+  margin-right: 1.4rem;
+}
+.commis__column:nth-child(3) {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.commis-tab {
+  margin-bottom: 18rem;
+}
+.commis-tab__title {
+  margin-bottom: 3rem;
+  font-family: "Druk Wide Cyr";
+  font-weight: 500;
+  font-size: 5.5rem;
+}
+.commis-tab__desc {
+  margin-bottom: 6rem;
+  font-size: 2rem;
+}
+.commis-tab__table .table__column {
+  font-size: 2rem;
+}
+.commis-tab__table .table__column:nth-child(1) {
+  width: 6.8rem;
+}
+.commis-tab__table .table__column:nth-child(2) {
+  width: 46rem;
+  margin-right: 2rem;
+}
+.commis-tab__table .table__column:nth-child(3) {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  font-size: 1.7rem;
+  letter-spacing: 0.05em;
 }
 
 html {
