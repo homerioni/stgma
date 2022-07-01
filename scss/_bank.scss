@@ -1,0 +1,88 @@
+@import "param";
+
+.bank {
+  margin-bottom: 17rem;
+
+  &__title {
+    margin-bottom: 5rem;
+    font-family: $druk;
+    font-weight: 500;
+    font-size: 5.5rem;
+    text-align: center;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 75rem;
+    height: fit-content;
+    padding: 3.1rem 3.6rem 7rem 4.7rem;
+    border-radius: 2rem;
+  }
+
+  &__item-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+
+  &__text-block {
+    width: 54.5rem;
+  }
+
+  &__item-title {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: $druk;
+    font-weight: 500;
+    font-size: 5.2rem;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-bottom: 3rem;
+    font-size: 1.7rem;
+  }
+
+  &__btn {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    font-family: $def-font;
+    font-weight: 400;
+    font-size: 2rem;
+
+    &:after {
+      content: none;
+    }
+
+    .button__icon {
+      margin-top: 0.2rem;
+    }
+  }
+
+  &__img-box {
+    width: 11rem;
+    height: 11rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

@@ -318,6 +318,9 @@ input[type=number] {
   font-size: 2.1rem;
   text-transform: uppercase;
 }
+.tabs-table__tab:hover {
+  color: #aaa;
+}
 .tabs-table__tab.active {
   position: relative;
   background-color: #141720;
@@ -343,6 +346,9 @@ input[type=number] {
   width: 2rem;
   height: 2rem;
   background-color: #141720;
+}
+.tabs-table__tab.active:hover {
+  color: white;
 }
 .tabs-table__tab-content {
   display: none;
@@ -884,6 +890,51 @@ body {
 }
 .crypto-tab__table .table__column:nth-child(4) {
   width: 21rem;
+}
+.crypto-tab__table--crypto-deposit .table__column {
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+}
+.crypto-tab__table--crypto-deposit .table__column:nth-child(1) {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+.crypto-tab__table--crypto-deposit .table__column:nth-child(2) {
+  width: 27rem;
+}
+.crypto-tab__table--crypto-deposit .table__column:nth-child(3) {
+  width: 26rem;
+}
+.crypto-tab__table--crypto-deposit .table__column:nth-child(4) {
+  width: 27rem;
+}
+.crypto-tab__table--crypto-deposit .table__column:nth-child(5) {
+  width: 30rem;
+}
+.crypto-tab__table--crypto-deposit .table__column:nth-child(6) {
+  width: 14rem;
+}
+.crypto-tab__table--min-deposit .table__column {
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+}
+.crypto-tab__table--min-deposit .table__column:nth-child(1) {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+.crypto-tab__table--min-deposit .table__column:nth-child(2) {
+  width: 31rem;
+}
+.crypto-tab__table--min-deposit .table__column:nth-child(3) {
+  width: 34rem;
+}
+.crypto-tab__table--min-deposit .table__column:nth-child(4) {
+  width: 35rem;
+}
+.crypto-tab__table--min-deposit .table__column:nth-child(5) {
+  width: 23rem;
 }
 
 .portable {
@@ -1976,6 +2027,92 @@ body {
           flex: auto;
   font-size: 1.7rem;
   letter-spacing: 0.05em;
+}
+
+.bank {
+  margin-bottom: 17rem;
+}
+.bank__title {
+  margin-bottom: 5rem;
+  font-family: "Druk Wide Cyr";
+  font-weight: 500;
+  font-size: 5.5rem;
+  text-align: center;
+}
+.bank__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.bank__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 75rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 3.1rem 3.6rem 7rem 4.7rem;
+  border-radius: 2rem;
+}
+.bank__item-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.bank__item-bg > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.bank__text-block {
+  width: 54.5rem;
+}
+.bank__item-title {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: "Druk Wide Cyr";
+  font-weight: 500;
+  font-size: 5.2rem;
+  text-transform: uppercase;
+}
+.bank__text {
+  margin-bottom: 3rem;
+  font-size: 1.7rem;
+}
+.bank__btn {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-size: 2rem;
+}
+.bank__btn:after {
+  content: none;
+}
+.bank__btn .button__icon {
+  margin-top: 0.2rem;
+}
+.bank__img-box {
+  width: 11rem;
+  height: 11rem;
+}
+.bank__img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 html {
