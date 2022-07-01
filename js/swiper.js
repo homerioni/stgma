@@ -44,3 +44,19 @@ const new_crypto_slider = new Swiper('.new-crypto__slider', {
         duration: 3000,
     },
 });
+
+const advantages_slider = new Swiper('.advantages__slider', {
+    direction: 'horizontal',
+    slidesPerView: 2.2,
+    spaceBetween: rem(7.4),
+    loop: true,
+
+    autoplay: {
+        duration: 5000,
+    },
+
+    pagination: {
+        el: '.advantages__pagination',
+        type: 'bullets',
+    },
+});
