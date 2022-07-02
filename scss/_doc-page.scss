@@ -1,0 +1,62 @@
+@import "param";
+
+.doc-page {
+  margin-top: 12rem;
+  margin-bottom: 8rem;
+
+  &__container {
+    width: 100rem;
+
+    > *:not(:last-child, :first-child) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+    font-family: $druk;
+    font-weight: 500;
+    font-size: 5.2rem;
+  }
+
+  &__text {
+    font-size: 2rem;
+    color: #CECEDA;
+  }
+
+  &__border-block {
+    position: relative;
+    padding-left: 3rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 3px;
+      height: 100%;
+      border-radius: 100rem;
+      background: linear-gradient(99.94deg, #8470FF 21.81%, #EB81C8 97.95%);
+    }
+  }
+
+  &__list {
+  }
+
+  &__list-item {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__number {
+    flex: none;
+    width: 6.2rem;
+    font-family: $druk;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+}

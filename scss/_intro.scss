@@ -1,11 +1,8 @@
 @import "param";
 
 .intro {
+  min-height: 30rem;
   margin: 8rem 0 23rem 0;
-
-  &--partners {
-    margin-bottom: 36rem;
-  }
 
   &__bg {
     position: absolute;
