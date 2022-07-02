@@ -2946,6 +2946,83 @@ body {
   font-size: 2.1rem;
   text-transform: uppercase;
 }
+.docs {
+  margin-bottom: 13rem;
+}
+.docs__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.docs__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 41rem;
+  height: 41.4rem;
+  padding: 5rem 9rem 4rem 4rem;
+}
+.docs__item:nth-child(3n+1) {
+  margin-right: 16.5rem;
+}
+.docs__item:nth-child(3n) {
+  margin-left: auto;
+}
+.docs__item:nth-child(n+4) {
+  margin-top: 15rem;
+}
+.docs__item--doc-img {
+  padding-top: 8rem;
+}
+.docs__item--doc-img .docs__item-bg {
+  margin: -8rem -5rem 0 -1.1rem;
+}
+.docs__item--doc-img .docs__item-bg > img {
+  width: 113%;
+  height: 125%;
+}
+.docs__item-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.docs__item-bg > img {
+  width: 105%;
+  height: 105%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.docs__number {
+  font-family: "Druk Wide Cyr";
+  font-weight: bold;
+  font-size: 2rem;
+}
+.docs__title {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+  font-family: "Druk Wide Cyr";
+  font-weight: 500;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+}
+
 html {
   scroll-behavior: smooth;
 }

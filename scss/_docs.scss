@@ -1,0 +1,79 @@
+@import "param";
+
+.docs {
+  margin-bottom: 13rem;
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 41rem;
+    height: 41.4rem;
+    padding: 5rem 9rem 4rem 4rem;
+
+    &:nth-child(3n + 1) {
+      margin-right: 16.5rem;
+    }
+
+    &:nth-child(3n) {
+      margin-left: auto;
+    }
+
+    &:nth-child(n + 4) {
+      margin-top: 15rem;
+    }
+
+    &--doc-img {
+      padding-top: 8rem;
+
+      .docs__item-bg {
+        margin: -8rem -5rem 0 -1.1rem;
+
+        > img {
+          width: 113%;
+          height: 125%;
+        }
+      }
+    }
+  }
+
+  &__item-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+
+    > img {
+      width: 105%;
+      height: 105%;
+      object-fit: fill;
+    }
+  }
+
+  &__number {
+    font-family: $druk;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  &__title {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    font-family: $druk;
+    font-weight: 500;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+  }
+}
