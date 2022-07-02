@@ -4,11 +4,36 @@
   margin-top: 8rem;
   margin-bottom: 18rem;
 
+  &--security {
+    margin-top: 4rem;
+
+    .about-intro__image-block {
+      width: 63.5rem;
+      height: 61rem;
+      border-radius: 0;
+      margin-right: 0;
+      background: none;
+      box-shadow: none;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
   &__bg {
     position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
+    width: 100%;
+
+    > img {
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   &__container {

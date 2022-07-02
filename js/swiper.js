@@ -50,6 +50,7 @@ const advantages_slider = new Swiper('.advantages__slider', {
     slidesPerView: 2.2,
     spaceBetween: rem(7.4),
     loop: true,
+    centeredSlides: true,
 
     autoplay: {
         duration: 5000,

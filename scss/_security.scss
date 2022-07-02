@@ -1,0 +1,98 @@
+@import "param";
+
+.security {
+  margin-bottom: 21rem;
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 17rem;
+
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__item-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(40px);
+  }
+
+  &__img-box {
+    width: 26.7rem;
+    height: 100%;
+    margin-right: 5rem;
+    border-radius: 2rem;
+    overflow: hidden;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text-block {
+    width: 87rem;
+    margin-right: 7.6rem;
+    padding: 2rem 0;
+  }
+
+  &__item-title {
+    margin-bottom: 1.5rem;
+    font-family: $druk;
+    font-weight: 500;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+  }
+
+  &__item-desc {
+    font-size: 2rem;
+    color: #CECEDA;
+  }
+
+  &__separator {
+    height: 10rem;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &__number {
+    position: relative;
+    font-family: $druk;
+    font-size: 7.4rem;
+    margin: 0 auto;
+
+    > span:first-child {
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      z-index: -1;
+      background: radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%),
+      radial-gradient(94.31% 66.31% at -53.25% 10.23%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 7.6rem;
+    }
+
+    > span:last-child {
+      position: relative;
+      color: rgb(55, 58, 67);
+      background: linear-gradient(150deg, rgba(190, 186, 193, 1) 0%, rgb(55, 58, 67) 30%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

@@ -438,7 +438,7 @@ input[type=number] {
 body {
   min-height: 100vh;
   position: relative;
-  padding-bottom: 48.5rem;
+  padding-bottom: 54.5rem;
 }
 @media (max-width: 48em) {
   body {
@@ -451,16 +451,6 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-}
-.footer__dark-bg {
-  position: absolute;
-  left: 0;
-  top: -6rem;
-  display: block;
-  width: 100%;
-  height: 13.8rem;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(25.9%, #070B14), color-stop(96.53%, rgba(7, 11, 20, 0.22)));
-  background: linear-gradient(180deg, #070B14 25.9%, rgba(7, 11, 20, 0.22) 96.53%);
 }
 .footer__container {
   display: -webkit-box;
@@ -2119,11 +2109,35 @@ body {
   margin-top: 8rem;
   margin-bottom: 18rem;
 }
+.about-intro--security {
+  margin-top: 4rem;
+}
+.about-intro--security .about-intro__image-block {
+  width: 63.5rem;
+  height: 61rem;
+  border-radius: 0;
+  margin-right: 0;
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.about-intro--security .about-intro__image-block > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .about-intro__bg {
   position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
+  width: 100%;
+}
+.about-intro__bg > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .about-intro__container {
   display: -webkit-box;
@@ -2459,6 +2473,183 @@ body {
 }
 .advantages .advantages__pagination .swiper-pagination-bullet {
   margin: 0 1rem;
+}
+
+.contacts {
+  margin-bottom: 10rem;
+}
+.contacts__title {
+  margin-bottom: 6rem;
+  font-family: "Druk Wide Cyr";
+  font-weight: 500;
+  font-size: 5.5rem;
+  text-align: center;
+}
+.contacts__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 6rem;
+}
+.contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contacts__link-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 8.6rem;
+  height: 8.6rem;
+  margin-right: 2.5rem;
+}
+.contacts__link-icon > img {
+  width: 300%;
+  height: 300%;
+}
+.contacts__link-title {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-family: "Druk Wide Cyr";
+  font-weight: 500;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+}
+.contacts__link-contact {
+  display: block;
+  font-size: 2rem;
+}
+.contacts__map {
+  position: relative;
+  width: 100%;
+  height: 53rem;
+  padding: 1px;
+}
+.contacts__map:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  background: radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%), radial-gradient(94.31% 66.31% at -53.25% 10.23%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%);
+}
+.contacts__map #map {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.contacts__map #map .ymaps-2-1-79-ground-pane {
+  filter: invert(0.9) grayscale(1);
+  -ms-filter: invert(0.9) grayscale(1);
+  -webkit-filter: invert(0.9) grayscale(1);
+  -moz-filter: invert(0.9) grayscale(1);
+  -o-filter: invert(0.9) grayscale(1);
+}
+.security {
+  margin-bottom: 21rem;
+}
+.security__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 17rem;
+}
+.security__item:not(:last-child) {
+  margin-bottom: 5rem;
+}
+.security__item-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.07);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
+.security__img-box {
+  width: 26.7rem;
+  height: 100%;
+  margin-right: 5rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.security__img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.security__text-block {
+  width: 87rem;
+  margin-right: 7.6rem;
+  padding: 2rem 0;
+}
+.security__item-title {
+  margin-bottom: 1.5rem;
+  font-family: "Druk Wide Cyr";
+  font-weight: 500;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+}
+.security__item-desc {
+  font-size: 2rem;
+  color: #CECEDA;
+}
+.security__separator {
+  height: 10rem;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.security__number {
+  position: relative;
+  font-family: "Druk Wide Cyr";
+  font-size: 7.4rem;
+  margin: 0 auto;
+}
+.security__number > span:first-child {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  z-index: -1;
+  background: radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%), radial-gradient(94.31% 66.31% at -53.25% 10.23%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 7.6rem;
+}
+.security__number > span:last-child {
+  position: relative;
+  color: rgb(55, 58, 67);
+  background: linear-gradient(150deg, rgb(190, 186, 193) 0%, rgb(55, 58, 67) 30%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 html {
