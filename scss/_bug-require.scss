@@ -1,0 +1,148 @@
+@import "param";
+
+.bug-require {
+  margin-bottom: 18rem;
+
+  &__title-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4.5rem;
+  }
+
+  &__title {
+    width: 56.4rem;
+    font-family: $druk;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 4.4rem;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    width: 78.5rem;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-align: right;
+  }
+
+  &__separate {
+    width: 100%;
+    height: 2px;
+    margin-bottom: 4.5rem;
+    border-radius: 2rem;
+    background: linear-gradient(90deg, transparent 0, white 50%, transparent 100%);
+    opacity: 0.25;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list-box {
+    width: 70rem;
+  }
+
+  &__list-desc {
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  &__list {
+  }
+
+  &__list-item {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 3.5rem;
+    }
+  }
+
+  &__item-number {
+    flex: none;
+    width: 5.5rem;
+    font-family: $druk;
+    font-weight: 700;
+    font-size: 1.7rem;
+  }
+
+  &__item-text {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    color: #CECEDA;
+
+    > a {
+      color: #EB81C8;
+
+      &:hover {
+        color: #c06ba4;
+      }
+    }
+  }
+
+  &__img-box {
+    position: relative;
+    width: 73.3rem;
+    height: 49.1rem;
+    border-radius: 2rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+    }
+  }
+
+  &__img-text-box {
+    position: absolute;
+    left: -5.6rem;
+    bottom: -4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 26rem;
+    min-height: 10rem;
+    padding: 0 3rem;
+    border-radius: 2rem;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(3rem);
+    }
+  }
+
+  &__img-text {
+    position: relative;
+    width: 13.4rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  &__img-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+
+    > img {
+      width: 22rem;
+      height: 22rem;
+      //transform: translate(-50%, -50%);
+    }
+  }
+}

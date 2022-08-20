@@ -3097,6 +3097,207 @@ body {
   font-size: 1.8rem;
 }
 
+.bug-intro {
+  margin-bottom: 18rem;
+}
+.bug-intro__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.bug-intro__text-box {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+.bug-intro__title {
+  margin-bottom: 4rem;
+  font-family: "Druk Wide Cyr";
+  font-weight: 500;
+  font-size: 7.4rem;
+  line-height: 9rem;
+  text-transform: uppercase;
+}
+.bug-intro__desc {
+  width: 65.1rem;
+  margin-bottom: 6.4rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.bug-intro__img-box {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 80rem;
+  height: 66rem;
+}
+.bug-intro__img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.bug-require {
+  margin-bottom: 18rem;
+}
+.bug-require__title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4.5rem;
+}
+.bug-require__title {
+  width: 56.4rem;
+  font-family: "Druk Wide Cyr";
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 4.4rem;
+  text-transform: uppercase;
+}
+.bug-require__desc {
+  width: 78.5rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  text-align: right;
+}
+.bug-require__separate {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 4.5rem;
+  border-radius: 2rem;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(50%, white), to(transparent));
+  background: linear-gradient(90deg, transparent 0, white 50%, transparent 100%);
+  opacity: 0.25;
+}
+.bug-require__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.bug-require__list-box {
+  width: 70rem;
+}
+.bug-require__list-desc {
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.bug-require__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.bug-require__list-item:not(:last-child) {
+  margin-bottom: 3.5rem;
+}
+.bug-require__item-number {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 5.5rem;
+  font-family: "Druk Wide Cyr";
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+.bug-require__item-text {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  color: #CECEDA;
+}
+.bug-require__item-text > a {
+  color: #EB81C8;
+}
+.bug-require__item-text > a:hover {
+  color: #c06ba4;
+}
+.bug-require__img-box {
+  position: relative;
+  width: 73.3rem;
+  height: 49.1rem;
+  border-radius: 2rem;
+}
+.bug-require__img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+}
+.bug-require__img-text-box {
+  position: absolute;
+  left: -5.6rem;
+  bottom: -4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 26rem;
+  min-height: 10rem;
+  padding: 0 3rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.bug-require__img-text-box:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(3rem);
+          backdrop-filter: blur(3rem);
+}
+.bug-require__img-text {
+  position: relative;
+  width: 13.4rem;
+  font-size: 1.7rem;
+  line-height: 2rem;
+}
+.bug-require__img-icon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 5rem;
+  height: 5rem;
+}
+.bug-require__img-icon > img {
+  width: 22rem;
+  height: 22rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
