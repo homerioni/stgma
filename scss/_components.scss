@@ -136,6 +136,23 @@
     border-radius: 2rem;
     background-color: #141720;
   }
+
+  &__favorite-btn {
+    > svg {
+      width: 2.5rem;
+      height: 2.3rem;
+
+      path {
+        fill: white;
+      }
+    }
+
+    &.active {
+      > svg path {
+        fill: #FF93BD;
+      }
+    }
+  }
 }
 
 .tabs-table {

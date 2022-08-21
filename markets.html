@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="another website">
+    <title>Страница</title>
+
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<header class="header">
+    <nav class="container header__container">
+        <a href="/" class="header__logo">
+            <img src="img/logo.svg" alt="">
+        </a>
+        <ul class="header__list">
+            <li class="header__item">
+                <a href="#">Торговля</a>
+            </li>
+            <li class="header__item">
+                <a href="#">STGMA Биржа</a>
+            </li>
+            <li class="header__item">
+                <a href="#">Поддержка</a>
+            </li>
+        </ul>
+        <div class="header__buttons">
+            <button type="button" class="button button--select button--slim">
+                <span>Ru</span>
+                <span class="button__icon">
+                    <img src="img/button-icon-arrow-down.svg" alt="">
+                </span>
+            </button>
+            <a href="#" class="button button--slim">
+                <span>Войти</span>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="intro">
+        <div class="intro__bg">
+            <img src="img/intro-bg.svg" alt="">
+        </div>
+        <div class="container">
+            <h1 class="intro__title">РЫНКИ</h1>
+            <a href="" class="intro__scroll scroll">
+                <span class="scroll__text">Scroll down</span>
+                <span class="scroll__icon">
+                    <img src="img/scroll-arrow-icon.svg" alt="">
+                </span>
+            </a>
+        </div>
+    </section>
+    <section class="crypto crypto--markets">
+        <div class="container">
+            <div class="crypto__table table">
+                <div class="table__row-title">
+                    <div class="table__column-title table__column">#</div>
+                    <div class="table__column-title table__column">Название</div>
+                    <div class="table__column-title table__column">Последняя цена</div>
+                    <div class="table__column-title table__column">Изменение</div>
+                    <div class="table__column-title table__column">Динамика</div>
+                    <div class="table__column-title table__column">Объем (24 часа)</div>
+                    <div class="table__column-title table__column">Капитализация</div>
+                </div>
+                <div class="table__content">
+                    <div class="table__row">
+                        <button type="button" class="table__column table__favorite-btn">
+                            <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5489 0.927054C11.8483 0.00574327 13.1517 0.00573969 13.4511 0.92705L15.5309 7.32827C15.6648 7.74029 16.0488 8.01925 16.482 8.01925L23.2126 8.01925C24.1814 8.01925 24.5841 9.25887 23.8004 9.82827L18.3552 13.7844C18.0047 14.0391 17.8581 14.4905 17.9919 14.9025L20.0718 21.3037C20.3712 22.225 19.3167 22.9911 18.533 22.4217L13.0878 18.4656C12.7373 18.2109 12.2627 18.2109 11.9122 18.4656L6.46701 22.4217C5.6833 22.9911 4.62882 22.225 4.92817 21.3037L7.00805 14.9025C7.14193 14.4905 6.99527 14.0391 6.64478 13.7844L1.19958 9.82827C0.415862 9.25887 0.81864 8.01925 1.78736 8.01925L8.51801 8.01925C8.95123 8.01925 9.33519 7.74029 9.46906 7.32827L11.5489 0.927054Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <div class="crypto__name-block table__column">
+                            <div class="crypto__icon">
+                                <img src="img/crypto-icon1.svg" alt="">
+                            </div>
+                            <h3 class="crypto__name">Bitcoin</h3>
+                            <div class="crypto__abbr">btc</div>
+                        </div>
+                        <div class="table__column">
+                            ₽1 242 426
+                        </div>
+                        <div class="crypto__trend crypto__trend--green table__column">
+                            +2.5%
+                        </div>
+                        <div class="crypto__graph table__column">
+                            <img src="img/crypto-markets-img.svg" alt="">
+                        </div>
+                        <div class="table__column">
+                            294 172,86
+                        </div>
+                        <div class="table__column">
+                            ₽34 242 426
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <button type="button" class="table__column table__favorite-btn">
+                            <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5489 0.927054C11.8483 0.00574327 13.1517 0.00573969 13.4511 0.92705L15.5309 7.32827C15.6648 7.74029 16.0488 8.01925 16.482 8.01925L23.2126 8.01925C24.1814 8.01925 24.5841 9.25887 23.8004 9.82827L18.3552 13.7844C18.0047 14.0391 17.8581 14.4905 17.9919 14.9025L20.0718 21.3037C20.3712 22.225 19.3167 22.9911 18.533 22.4217L13.0878 18.4656C12.7373 18.2109 12.2627 18.2109 11.9122 18.4656L6.46701 22.4217C5.6833 22.9911 4.62882 22.225 4.92817 21.3037L7.00805 14.9025C7.14193 14.4905 6.99527 14.0391 6.64478 13.7844L1.19958 9.82827C0.415862 9.25887 0.81864 8.01925 1.78736 8.01925L8.51801 8.01925C8.95123 8.01925 9.33519 7.74029 9.46906 7.32827L11.5489 0.927054Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <div class="crypto__name-block table__column">
+                            <div class="crypto__icon">
+                                <img src="img/crypto-icon2.svg" alt="">
+                            </div>
+                            <h3 class="crypto__name">Ethereum</h3>
+                            <div class="crypto__abbr">eth</div>
+                        </div>
+                        <div class="table__column">
+                            ₽1 114 626
+                        </div>
+                        <div class="crypto__trend crypto__trend--red table__column">
+                            -6.50%
+                        </div>
+                        <div class="crypto__graph table__column">
+                            <img src="img/crypto-markets-img.svg" alt="">
+                        </div>
+                        <div class="table__column">
+                            294 172,86
+                        </div>
+                        <div class="table__column">
+                            ₽34 242 426
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <button type="button" class="table__column table__favorite-btn active">
+                            <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5489 0.927054C11.8483 0.00574327 13.1517 0.00573969 13.4511 0.92705L15.5309 7.32827C15.6648 7.74029 16.0488 8.01925 16.482 8.01925L23.2126 8.01925C24.1814 8.01925 24.5841 9.25887 23.8004 9.82827L18.3552 13.7844C18.0047 14.0391 17.8581 14.4905 17.9919 14.9025L20.0718 21.3037C20.3712 22.225 19.3167 22.9911 18.533 22.4217L13.0878 18.4656C12.7373 18.2109 12.2627 18.2109 11.9122 18.4656L6.46701 22.4217C5.6833 22.9911 4.62882 22.225 4.92817 21.3037L7.00805 14.9025C7.14193 14.4905 6.99527 14.0391 6.64478 13.7844L1.19958 9.82827C0.415862 9.25887 0.81864 8.01925 1.78736 8.01925L8.51801 8.01925C8.95123 8.01925 9.33519 7.74029 9.46906 7.32827L11.5489 0.927054Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <div class="crypto__name-block table__column">
+                            <div class="crypto__icon">
+                                <img src="img/crypto-icon3.svg" alt="">
+                            </div>
+                            <h3 class="crypto__name">Cardano</h3>
+                            <div class="crypto__abbr">ada</div>
+                        </div>
+                        <div class="table__column">
+                            ₽114 626
+                        </div>
+                        <div class="crypto__trend crypto__trend--red table__column">
+                            -5.70%
+                        </div>
+                        <div class="crypto__graph table__column">
+                            <img src="img/crypto-markets-img.svg" alt="">
+                        </div>
+                        <div class="table__column">
+                            294 172,86
+                        </div>
+                        <div class="table__column">
+                            ₽34 242 426
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <button type="button" class="table__column table__favorite-btn">
+                            <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5489 0.927054C11.8483 0.00574327 13.1517 0.00573969 13.4511 0.92705L15.5309 7.32827C15.6648 7.74029 16.0488 8.01925 16.482 8.01925L23.2126 8.01925C24.1814 8.01925 24.5841 9.25887 23.8004 9.82827L18.3552 13.7844C18.0047 14.0391 17.8581 14.4905 17.9919 14.9025L20.0718 21.3037C20.3712 22.225 19.3167 22.9911 18.533 22.4217L13.0878 18.4656C12.7373 18.2109 12.2627 18.2109 11.9122 18.4656L6.46701 22.4217C5.6833 22.9911 4.62882 22.225 4.92817 21.3037L7.00805 14.9025C7.14193 14.4905 6.99527 14.0391 6.64478 13.7844L1.19958 9.82827C0.415862 9.25887 0.81864 8.01925 1.78736 8.01925L8.51801 8.01925C8.95123 8.01925 9.33519 7.74029 9.46906 7.32827L11.5489 0.927054Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <div class="crypto__name-block table__column">
+                            <div class="crypto__icon">
+                                <img src="img/crypto-icon4.svg" alt="">
+                            </div>
+                            <h3 class="crypto__name">Solana</h3>
+                            <div class="crypto__abbr">sol</div>
+                        </div>
+                        <div class="table__column">
+                            ₽114 626
+                        </div>
+                        <div class="crypto__trend crypto__trend--green table__column">
+                            +5.70%
+                        </div>
+                        <div class="crypto__graph table__column">
+                            <img src="img/crypto-markets-img.svg" alt="">
+                        </div>
+                        <div class="table__column">
+                            294 172,86
+                        </div>
+                        <div class="table__column">
+                            ₽34 242 426
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <button type="button" class="table__column table__favorite-btn">
+                            <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5489 0.927054C11.8483 0.00574327 13.1517 0.00573969 13.4511 0.92705L15.5309 7.32827C15.6648 7.74029 16.0488 8.01925 16.482 8.01925L23.2126 8.01925C24.1814 8.01925 24.5841 9.25887 23.8004 9.82827L18.3552 13.7844C18.0047 14.0391 17.8581 14.4905 17.9919 14.9025L20.0718 21.3037C20.3712 22.225 19.3167 22.9911 18.533 22.4217L13.0878 18.4656C12.7373 18.2109 12.2627 18.2109 11.9122 18.4656L6.46701 22.4217C5.6833 22.9911 4.62882 22.225 4.92817 21.3037L7.00805 14.9025C7.14193 14.4905 6.99527 14.0391 6.64478 13.7844L1.19958 9.82827C0.415862 9.25887 0.81864 8.01925 1.78736 8.01925L8.51801 8.01925C8.95123 8.01925 9.33519 7.74029 9.46906 7.32827L11.5489 0.927054Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <div class="crypto__name-block table__column">
+                            <div class="crypto__icon">
+                                <img src="img/crypto-icon1.svg" alt="">
+                            </div>
+                            <h3 class="crypto__name">Bitcoin</h3>
+                            <div class="crypto__abbr">btc</div>
+                        </div>
+                        <div class="table__column">
+                            ₽1 242 426
+                        </div>
+                        <div class="crypto__trend crypto__trend--green table__column">
+                            +2.5%
+                        </div>
+                        <div class="crypto__graph table__column">
+                            <img src="img/crypto-markets-img.svg" alt="">
+                        </div>
+                        <div class="table__column">
+                            294 172,86
+                        </div>
+                        <div class="table__column">
+                            ₽34 242 426
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <button type="button" class="table__column table__favorite-btn">
+                            <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5489 0.927054C11.8483 0.00574327 13.1517 0.00573969 13.4511 0.92705L15.5309 7.32827C15.6648 7.74029 16.0488 8.01925 16.482 8.01925L23.2126 8.01925C24.1814 8.01925 24.5841 9.25887 23.8004 9.82827L18.3552 13.7844C18.0047 14.0391 17.8581 14.4905 17.9919 14.9025L20.0718 21.3037C20.3712 22.225 19.3167 22.9911 18.533 22.4217L13.0878 18.4656C12.7373 18.2109 12.2627 18.2109 11.9122 18.4656L6.46701 22.4217C5.6833 22.9911 4.62882 22.225 4.92817 21.3037L7.00805 14.9025C7.14193 14.4905 6.99527 14.0391 6.64478 13.7844L1.19958 9.82827C0.415862 9.25887 0.81864 8.01925 1.78736 8.01925L8.51801 8.01925C8.95123 8.01925 9.33519 7.74029 9.46906 7.32827L11.5489 0.927054Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <div class="crypto__name-block table__column">
+                            <div class="crypto__icon">
+                                <img src="img/crypto-icon2.svg" alt="">
+                            </div>
+                            <h3 class="crypto__name">Ethereum</h3>
+                            <div class="crypto__abbr">eth</div>
+                        </div>
+                        <div class="table__column">
+                            ₽1 114 626
+                        </div>
+                        <div class="crypto__trend crypto__trend--red table__column">
+                            -6.50%
+                        </div>
+                        <div class="crypto__graph table__column">
+                            <img src="img/crypto-markets-img.svg" alt="">
+                        </div>
+                        <div class="table__column">
+                            294 172,86
+                        </div>
+                        <div class="table__column">
+                            ₽34 242 426
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <button type="button" class="table__column table__favorite-btn active">
+                            <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5489 0.927054C11.8483 0.00574327 13.1517 0.00573969 13.4511 0.92705L15.5309 7.32827C15.6648 7.74029 16.0488 8.01925 16.482 8.01925L23.2126 8.01925C24.1814 8.01925 24.5841 9.25887 23.8004 9.82827L18.3552 13.7844C18.0047 14.0391 17.8581 14.4905 17.9919 14.9025L20.0718 21.3037C20.3712 22.225 19.3167 22.9911 18.533 22.4217L13.0878 18.4656C12.7373 18.2109 12.2627 18.2109 11.9122 18.4656L6.46701 22.4217C5.6833 22.9911 4.62882 22.225 4.92817 21.3037L7.00805 14.9025C7.14193 14.4905 6.99527 14.0391 6.64478 13.7844L1.19958 9.82827C0.415862 9.25887 0.81864 8.01925 1.78736 8.01925L8.51801 8.01925C8.95123 8.01925 9.33519 7.74029 9.46906 7.32827L11.5489 0.927054Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <div class="crypto__name-block table__column">
+                            <div class="crypto__icon">
+                                <img src="img/crypto-icon3.svg" alt="">
+                            </div>
+                            <h3 class="crypto__name">Cardano</h3>
+                            <div class="crypto__abbr">ada</div>
+                        </div>
+                        <div class="table__column">
+                            ₽114 626
+                        </div>
+                        <div class="crypto__trend crypto__trend--red table__column">
+                            -5.70%
+                        </div>
+                        <div class="crypto__graph table__column">
+                            <img src="img/crypto-markets-img.svg" alt="">
+                        </div>
+                        <div class="table__column">
+                            294 172,86
+                        </div>
+                        <div class="table__column">
+                            ₽34 242 426
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <button type="button" class="table__column table__favorite-btn">
+                            <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5489 0.927054C11.8483 0.00574327 13.1517 0.00573969 13.4511 0.92705L15.5309 7.32827C15.6648 7.74029 16.0488 8.01925 16.482 8.01925L23.2126 8.01925C24.1814 8.01925 24.5841 9.25887 23.8004 9.82827L18.3552 13.7844C18.0047 14.0391 17.8581 14.4905 17.9919 14.9025L20.0718 21.3037C20.3712 22.225 19.3167 22.9911 18.533 22.4217L13.0878 18.4656C12.7373 18.2109 12.2627 18.2109 11.9122 18.4656L6.46701 22.4217C5.6833 22.9911 4.62882 22.225 4.92817 21.3037L7.00805 14.9025C7.14193 14.4905 6.99527 14.0391 6.64478 13.7844L1.19958 9.82827C0.415862 9.25887 0.81864 8.01925 1.78736 8.01925L8.51801 8.01925C8.95123 8.01925 9.33519 7.74029 9.46906 7.32827L11.5489 0.927054Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <div class="crypto__name-block table__column">
+                            <div class="crypto__icon">
+                                <img src="img/crypto-icon4.svg" alt="">
+                            </div>
+                            <h3 class="crypto__name">Solana</h3>
+                            <div class="crypto__abbr">sol</div>
+                        </div>
+                        <div class="table__column">
+                            ₽114 626
+                        </div>
+                        <div class="crypto__trend crypto__trend--green table__column">
+                            +5.70%
+                        </div>
+                        <div class="crypto__graph table__column">
+                            <img src="img/crypto-markets-img.svg" alt="">
+                        </div>
+                        <div class="table__column">
+                            294 172,86
+                        </div>
+                        <div class="table__column">
+                            ₽34 242 426
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <button type="button" class="table__column table__favorite-btn">
+                            <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5489 0.927054C11.8483 0.00574327 13.1517 0.00573969 13.4511 0.92705L15.5309 7.32827C15.6648 7.74029 16.0488 8.01925 16.482 8.01925L23.2126 8.01925C24.1814 8.01925 24.5841 9.25887 23.8004 9.82827L18.3552 13.7844C18.0047 14.0391 17.8581 14.4905 17.9919 14.9025L20.0718 21.3037C20.3712 22.225 19.3167 22.9911 18.533 22.4217L13.0878 18.4656C12.7373 18.2109 12.2627 18.2109 11.9122 18.4656L6.46701 22.4217C5.6833 22.9911 4.62882 22.225 4.92817 21.3037L7.00805 14.9025C7.14193 14.4905 6.99527 14.0391 6.64478 13.7844L1.19958 9.82827C0.415862 9.25887 0.81864 8.01925 1.78736 8.01925L8.51801 8.01925C8.95123 8.01925 9.33519 7.74029 9.46906 7.32827L11.5489 0.927054Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <div class="crypto__name-block table__column">
+                            <div class="crypto__icon">
+                                <img src="img/crypto-icon1.svg" alt="">
+                            </div>
+                            <h3 class="crypto__name">Bitcoin</h3>
+                            <div class="crypto__abbr">btc</div>
+                        </div>
+                        <div class="table__column">
+                            ₽1 242 426
+                        </div>
+                        <div class="crypto__trend crypto__trend--green table__column">
+                            +2.5%
+                        </div>
+                        <div class="crypto__graph table__column">
+                            <img src="img/crypto-markets-img.svg" alt="">
+                        </div>
+                        <div class="table__column">
+                            294 172,86
+                        </div>
+                        <div class="table__column">
+                            ₽34 242 426
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <button type="button" class="table__column table__favorite-btn">
+                            <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5489 0.927054C11.8483 0.00574327 13.1517 0.00573969 13.4511 0.92705L15.5309 7.32827C15.6648 7.74029 16.0488 8.01925 16.482 8.01925L23.2126 8.01925C24.1814 8.01925 24.5841 9.25887 23.8004 9.82827L18.3552 13.7844C18.0047 14.0391 17.8581 14.4905 17.9919 14.9025L20.0718 21.3037C20.3712 22.225 19.3167 22.9911 18.533 22.4217L13.0878 18.4656C12.7373 18.2109 12.2627 18.2109 11.9122 18.4656L6.46701 22.4217C5.6833 22.9911 4.62882 22.225 4.92817 21.3037L7.00805 14.9025C7.14193 14.4905 6.99527 14.0391 6.64478 13.7844L1.19958 9.82827C0.415862 9.25887 0.81864 8.01925 1.78736 8.01925L8.51801 8.01925C8.95123 8.01925 9.33519 7.74029 9.46906 7.32827L11.5489 0.927054Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <div class="crypto__name-block table__column">
+                            <div class="crypto__icon">
+                                <img src="img/crypto-icon2.svg" alt="">
+                            </div>
+                            <h3 class="crypto__name">Ethereum</h3>
+                            <div class="crypto__abbr">eth</div>
+                        </div>
+                        <div class="table__column">
+                            ₽1 114 626
+                        </div>
+                        <div class="crypto__trend crypto__trend--red table__column">
+                            -6.50%
+                        </div>
+                        <div class="crypto__graph table__column">
+                            <img src="img/crypto-markets-img.svg" alt="">
+                        </div>
+                        <div class="table__column">
+                            294 172,86
+                        </div>
+                        <div class="table__column">
+                            ₽34 242 426
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <button type="button" class="table__column table__favorite-btn active">
+                            <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5489 0.927054C11.8483 0.00574327 13.1517 0.00573969 13.4511 0.92705L15.5309 7.32827C15.6648 7.74029 16.0488 8.01925 16.482 8.01925L23.2126 8.01925C24.1814 8.01925 24.5841 9.25887 23.8004 9.82827L18.3552 13.7844C18.0047 14.0391 17.8581 14.4905 17.9919 14.9025L20.0718 21.3037C20.3712 22.225 19.3167 22.9911 18.533 22.4217L13.0878 18.4656C12.7373 18.2109 12.2627 18.2109 11.9122 18.4656L6.46701 22.4217C5.6833 22.9911 4.62882 22.225 4.92817 21.3037L7.00805 14.9025C7.14193 14.4905 6.99527 14.0391 6.64478 13.7844L1.19958 9.82827C0.415862 9.25887 0.81864 8.01925 1.78736 8.01925L8.51801 8.01925C8.95123 8.01925 9.33519 7.74029 9.46906 7.32827L11.5489 0.927054Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <div class="crypto__name-block table__column">
+                            <div class="crypto__icon">
+                                <img src="img/crypto-icon3.svg" alt="">
+                            </div>
+                            <h3 class="crypto__name">Cardano</h3>
+                            <div class="crypto__abbr">ada</div>
+                        </div>
+                        <div class="table__column">
+                            ₽114 626
+                        </div>
+                        <div class="crypto__trend crypto__trend--red table__column">
+                            -5.70%
+                        </div>
+                        <div class="crypto__graph table__column">
+                            <img src="img/crypto-markets-img.svg" alt="">
+                        </div>
+                        <div class="table__column">
+                            294 172,86
+                        </div>
+                        <div class="table__column">
+                            ₽34 242 426
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <button type="button" class="table__column table__favorite-btn">
+                            <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5489 0.927054C11.8483 0.00574327 13.1517 0.00573969 13.4511 0.92705L15.5309 7.32827C15.6648 7.74029 16.0488 8.01925 16.482 8.01925L23.2126 8.01925C24.1814 8.01925 24.5841 9.25887 23.8004 9.82827L18.3552 13.7844C18.0047 14.0391 17.8581 14.4905 17.9919 14.9025L20.0718 21.3037C20.3712 22.225 19.3167 22.9911 18.533 22.4217L13.0878 18.4656C12.7373 18.2109 12.2627 18.2109 11.9122 18.4656L6.46701 22.4217C5.6833 22.9911 4.62882 22.225 4.92817 21.3037L7.00805 14.9025C7.14193 14.4905 6.99527 14.0391 6.64478 13.7844L1.19958 9.82827C0.415862 9.25887 0.81864 8.01925 1.78736 8.01925L8.51801 8.01925C8.95123 8.01925 9.33519 7.74029 9.46906 7.32827L11.5489 0.927054Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <div class="crypto__name-block table__column">
+                            <div class="crypto__icon">
+                                <img src="img/crypto-icon4.svg" alt="">
+                            </div>
+                            <h3 class="crypto__name">Solana</h3>
+                            <div class="crypto__abbr">sol</div>
+                        </div>
+                        <div class="table__column">
+                            ₽114 626
+                        </div>
+                        <div class="crypto__trend crypto__trend--green table__column">
+                            +5.70%
+                        </div>
+                        <div class="crypto__graph table__column">
+                            <img src="img/crypto-markets-img.svg" alt="">
+                        </div>
+                        <div class="table__column">
+                            294 172,86
+                        </div>
+                        <div class="table__column">
+                            ₽34 242 426
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="trade-now">
+        <div class="container">
+            <div class="trade-now__content">
+                <div class="trade-now__bg"></div>
+                <div class="trade-now__text-block">
+                    <h2 class="trade-now__title">
+                        Начните торговлю прямо сейчас!
+                    </h2>
+                    <p class="trade-now__desc">
+                        Мы храним ваши цифровые активы в безопасном автономном хранилище
+                    </p>
+                    <div class="trade-now__buttons">
+                        <a href="#" class="trade-now__btn-now button">
+                            <span>Начать</span>
+                            <span class="button__icon">
+                                <img src="img/button-icon-arrow.svg" alt="">
+                            </span>
+                        </a>
+                        <button class="trade-now__btn-how">
+                            <span class="trade-now__btn-how-icon">
+                                <svg viewBox="0 0 15 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.9993 11.5004L-0.000732422 0.675049L-0.000732422 22.3257L14.9993 11.5004Z"/>
+                                </svg>
+                            </span>
+                            <span>Как это работает</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="trade-now__img-box">
+                    <img src="img/trade-now-phone.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__contacts">
+            <a href="/" class="footer__logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <div class="footer__socials">
+                <a href="#" class="footer__social-link">
+                    <img src="img/footer-mail-icon.svg" alt="">
+                </a>
+                <a href="#" class="footer__social-link">
+                    <img src="img/footer-phone-icon.svg" alt="">
+                </a>
+                <a href="#" class="footer__social-link">
+                    <img src="img/footer-telegram-icon.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <ul class="footer__list">
+            <li class="footer__list-item">
+                <a href="#">Торговые уловия</a>
+            </li>
+            <li class="footer__list-item">
+                <a href="#">Платежные методы</a>
+            </li>
+            <li class="footer__list-item">
+                <a href="#">Рынки</a>
+            </li>
+            <li class="footer__list-item">
+                <a href="#">Комиссии</a>
+            </li>
+            <li class="footer__list-item">
+                <a href="#">Новости</a>
+            </li>
+            <li class="footer__list-item">
+                <a href="#">Документы</a>
+            </li>
+        </ul>
+        <ul class="footer__list">
+            <li class="footer__list-item">
+                <a href="#">О нас</a>
+            </li>
+            <li class="footer__list-item">
+                <a href="#">Безопасность</a>
+            </li>
+            <li class="footer__list-item">
+                <a href="#">Партнёры</a>
+            </li>
+            <li class="footer__list-item">
+                <a href="#">Bug bounty</a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer__separator"></div>
+    <div class="container footer__request-block">
+        <div class="footer__copyright">© 1996-2022 LLS STGMA</div>
+        <div class="footer__request">
+            <span>Разработано</span>
+            <a href="#" class="footer__request-logo">
+                <img src="img/request-logo.svg" alt="">
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

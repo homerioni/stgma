@@ -20,4 +20,9 @@ $(document).ready(function () {
         $(this).parent().removeClass('focus');
     });
 
+    // favorite btn for table
+    $('.table__favorite-btn').click(function () {
+        $(this).toggleClass('active');
+    });
+
 });
