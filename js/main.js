@@ -13,4 +13,11 @@ $(document).ready(function () {
         $(this).parent().addClass('active');
     });
 
+    // feedback inputs focus
+    $('.feedback__input').focusin(function () {
+        $(this).parent().addClass('focus');
+    }).focusout(function () {
+        $(this).parent().removeClass('focus');
+    });
+
 });

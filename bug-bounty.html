@@ -136,6 +136,78 @@
             </div>
         </div>
     </section>
+    <section class="feedback">
+        <div class="container">
+            <div class="feedback__content">
+                <div class="feedback__title">Свяжитесь с нами</div>
+                <form class="feedback__form">
+                    <div class="feedback__form-item">
+                        <div class="feedback__input-title">Ошибка</div>
+                        <label class="feedback__label">
+                            <select class="feedback__select">
+                                <option value="">RCE</option>
+                                <option value="">Error</option>
+                                <option value="">404</option>
+                            </select>
+                            <svg class="feedback__select-arrow" width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.32882 13.004C3.32882 13.004 6.7385 17.2974 7.45334 20.7895C8.47513 16.7719 11.1597 13.0953 11.1597 13.0953" stroke="#9FA2AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.39203 19.4204L6.20898 1.27612" stroke="#9FA2AA" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="feedback__form-item">
+                        <div class="feedback__input-title">Ваше имя</div>
+                        <label class="feedback__label">
+                            <input type="text" placeholder="Имя" class="feedback__input">
+                        </label>
+                    </div>
+                    <div class="feedback__form-item">
+                        <div class="feedback__input-title">E-mail</div>
+                        <label class="feedback__label">
+                            <input type="email" placeholder="test@mail.ru" class="feedback__input">
+                        </label>
+                    </div>
+                    <div class="feedback__form-item feedback__form-item--full">
+                        <div class="feedback__input-title">Сообщение</div>
+                        <label class="feedback__label">
+                            <input type="text" placeholder="Сообщение..." class="feedback__input">
+                        </label>
+                    </div>
+                    <div class="feedback__submit-block">
+                        <div class="feedback__load-box">
+                            <div class="feedback__file">
+                                <div class="feedback__file-name">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.4383 11.0499L12.2483 20.2399C11.1225 21.3658 9.59552 21.9983 8.00334 21.9983C6.41115 21.9983 4.88418 21.3658 3.75834 20.2399C2.63249 19.1141 2 17.5871 2 15.9949C2 14.4027 2.63249 12.8758 3.75834 11.7499L12.9483 2.55992C13.6989 1.80936 14.7169 1.3877 15.7783 1.3877C16.8398 1.3877 17.8578 1.80936 18.6083 2.55992C19.3589 3.31048 19.7806 4.32846 19.7806 5.38992C19.7806 6.45138 19.3589 7.46936 18.6083 8.21992L9.40834 17.4099C9.03306 17.7852 8.52406 17.996 7.99334 17.996C7.46261 17.996 6.95362 17.7852 6.57834 17.4099C6.20306 17.0346 5.99222 16.5256 5.99222 15.9949C5.99222 15.4642 6.20306 14.9552 6.57834 14.5799L15.0683 6.09992" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Документ</span>
+                                </div>
+                                <button class="feedback__file-del">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 6L6 18" stroke="#8470FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6 6L18 18" stroke="#8470FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <label class="feedback__load-label">
+                                <input type="file">
+                                <svg class="feedback__load-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.4403 11.0499L12.2503 20.2399C11.1244 21.3658 9.59747 21.9983 8.00529 21.9983C6.41311 21.9983 4.88613 21.3658 3.76029 20.2399C2.63445 19.1141 2.00195 17.5871 2.00195 15.9949C2.00195 14.4027 2.63445 12.8758 3.76029 11.7499L12.9503 2.55992C13.7009 1.80936 14.7188 1.3877 15.7803 1.3877C16.8417 1.3877 17.8597 1.80936 18.6103 2.55992C19.3609 3.31048 19.7825 4.32846 19.7825 5.38992C19.7825 6.45138 19.3609 7.46936 18.6103 8.21992L9.41029 17.4099C9.03501 17.7852 8.52602 17.996 7.99529 17.996C7.46456 17.996 6.95557 17.7852 6.58029 17.4099C6.20501 17.0346 5.99418 16.5256 5.99418 15.9949C5.99418 15.4642 6.20501 14.9552 6.58029 14.5799L15.0703 6.09992" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Выбрать файл</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="feedback__btn button">
+                            <span>Отправить</span>
+                            <span class="button__icon">
+                                <img src="img/button-icon-arrow.svg" alt="">
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer class="footer">

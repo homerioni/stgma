@@ -1,0 +1,222 @@
+@import "param";
+
+.feedback {
+  margin-bottom: 13rem;
+
+  &__content {
+    padding: 6rem 21.4rem 8rem 21.4rem;
+    border-radius: 1rem;
+    background-color: #151923;
+  }
+
+  &__title {
+    font-family: $druk;
+    font-weight: 500;
+    font-size: 5.5rem;
+    line-height: 6.7rem;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__form-item {
+    position: relative;
+    z-index: 1;
+    width: 35rem;
+    margin-top: 6rem;
+
+    &--full {
+      width: 100%;
+    }
+  }
+
+  &__input-title {
+    margin-bottom: 1.8rem;
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 6.5rem;
+    padding: 0 3rem;
+    border-radius: 100rem;
+    background-color: #282D3A;
+
+    &.focus {
+      &:after {
+        content: '';
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        z-index: -1;
+        display: block;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        border-radius: 100rem;
+        background: radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%),
+        radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%),
+        radial-gradient(94.31% 66.31% at -53.25% 10.23%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%);
+      }
+    }
+  }
+
+  &__select {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    appearance: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+  }
+
+  &__select-arrow {
+    position: absolute;
+    right: 3rem;
+    top: 50%;
+    width: 1.3rem;
+    height: 2.2rem;
+    transform: translateY(-50%);
+
+    path {
+      stroke: #9FA2AA;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    font-size: 2rem;
+
+    &::placeholder {
+      font-weight: 400;
+      color: #CECEDA;
+    }
+  }
+
+  &__submit-block {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  &__load-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    font-family: $druk;
+    font-weight: 500;
+    font-size: 2.1rem;
+
+    > input {
+      display: none;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: radial-gradient(126.16% 1380.33% at 114.53% 50%, #4B63ED 0%, #F163A5 100%),
+      linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    }
+  }
+
+  &__load-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 1.3rem;
+
+    path {
+      stroke: white;
+    }
+  }
+
+  &__load-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__file {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 24.5rem;
+    height: 6.5rem;
+    padding: 0.8rem 0.8rem 0.8rem 3rem;
+    margin-right: 4rem;
+    border-radius: 100rem;
+    background-color: #282D3A;
+  }
+
+  &__file-name {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+
+    > svg {
+      flex: none;
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-right: 1rem;
+
+      path {
+        stroke: white;
+      }
+    }
+
+    > span {
+      display: block;
+      max-width: 25rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+
+  &__file-del {
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.9rem;
+    height: 4.9rem;
+    margin-left: 1rem;
+    border-radius: 100%;
+    background-color: #21252E;
+
+    > svg {
+      width: 2.4rem;
+      height: 2.4rem;
+
+      path {
+        stroke: #8470FF;
+      }
+    }
+  }
+
+  &__btn {
+    background-color: rgb(39, 41, 51);
+  }
+}
