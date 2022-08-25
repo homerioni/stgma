@@ -45,3 +45,127 @@
     }
   }
 }
+
+@media (max-width: 48em) {
+  .header {
+    &__container {
+    }
+
+    &__burger {
+      position: relative;
+      z-index: 11;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 7rem;
+      height: 5.2rem;
+
+      > span {
+        width: 100%;
+        height: 2px;
+        border-radius: 100rem;
+        background-color: white;
+        opacity: 1;
+        transition: opacity 0.25s ease;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 2px;
+        border-radius: 100rem;
+        background-color: white;
+        transition: transform 0.5s ease;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        border-radius: 100rem;
+        background-color: white;
+        transition: transform 0.5s ease;
+      }
+
+      &.active {
+        > span {
+          opacity: 0;
+        }
+
+        &:before {
+          transform: translateY(2.4rem) rotate(45deg);
+        }
+
+        &:after {
+          transform: translateY(-2.4rem) rotate(-45deg);
+        }
+      }
+    }
+
+    &__logo {
+      position: relative;
+      z-index: 11;
+      width: 26.8rem;
+      height: 20rem;
+      margin-right: 0;
+    }
+
+    &__burger-menu {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      padding: 18rem 4rem 0 4rem;
+      background-color: #070B14;
+    }
+
+    &__list {
+      display: block;
+      margin-bottom: 7rem;
+      text-align: center;
+    }
+
+    &__item {
+      font-size: 2.8rem;
+
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 5rem;
+      }
+
+      &:hover {
+        color: #bbb;
+      }
+    }
+
+    &__burger-separator {
+      width: 100%;
+      height: 1px;
+      background: #9D99AF;
+      opacity: .1;
+      margin: 12rem 0;
+    }
+
+    &__buttons {
+      position: relative;
+      z-index: 11;
+
+      > *:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+
+    &__btn-mob {
+      margin: 0 auto;
+    }
+  }
+}

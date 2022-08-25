@@ -15,28 +15,40 @@
 
 <header class="header">
     <nav class="container header__container">
+        <button class="header__burger">
+            <span></span>
+        </button>
         <a href="/" class="header__logo">
             <img src="img/logo.svg" alt="">
         </a>
-        <ul class="header__list">
-            <li class="header__item">
-                <a href="#">Торговля</a>
-            </li>
-            <li class="header__item">
-                <a href="#">STGMA Биржа</a>
-            </li>
-            <li class="header__item">
-                <a href="#">Поддержка</a>
-            </li>
-        </ul>
+        <div class="header__burger-menu">
+            <div class="header__burger-separator"></div>
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#">Торговля</a>
+                </li>
+                <li class="header__item">
+                    <a href="#">STGMA Биржа</a>
+                </li>
+                <li class="header__item">
+                    <a href="#">Поддержка</a>
+                </li>
+            </ul>
+            <a href="#" class="header__btn-mob button button--slim mobile">
+                <span>Войти</span>
+            </a>
+            <div class="header__burger-separator"></div>
+        </div>
         <div class="header__buttons">
-            <button type="button" class="button button--select button--slim">
-                <span>Ru</span>
+            <label class="button button--select button--slim">
+                <select>
+                    <option value="">Ru</option>
+                </select>
                 <span class="button__icon">
                     <img src="img/button-icon-arrow-down.svg" alt="">
                 </span>
-            </button>
-            <a href="#" class="button button--slim">
+            </label>
+            <a href="#" class="button button--slim desktop">
                 <span>Войти</span>
             </a>
         </div>

@@ -25,4 +25,11 @@ $(document).ready(function () {
         $(this).toggleClass('active');
     });
 
+    // burger menu
+    $('.header__burger').click(function () {
+        $('body').toggleClass('lock');
+        $(this).toggleClass('active');
+        $('.header__burger-menu').fadeToggle(300);
+    });
+
 });
