@@ -858,96 +858,47 @@ body {
     margin-top: 8rem;
     margin-bottom: 24rem;
   }
-  .main-intro__bg {
-    position: absolute;
-    z-index: -1;
-  }
-  .main-intro__bg > img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .main-intro__bg--crystal {
-    left: 0;
-    top: 10.5rem;
-    width: 38rem;
-    height: 78.2rem;
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
-  }
   .main-intro__bg--cards {
     right: 0;
-    top: 0;
-    width: 112.2rem;
-    height: 113.9rem;
-    overflow: hidden;
+    top: 30rem;
   }
   .main-intro__bg--cards > img {
-    -webkit-transform: translateX(10rem);
-            transform: translateX(10rem);
+    -webkit-transform: translateX(53.5rem);
+            transform: translateX(53.5rem);
   }
   .main-intro__container {
-    position: relative;
-    padding-left: 14rem;
+    padding: 0 4rem 44rem 4rem;
   }
   .main-intro__circle-text {
-    position: absolute;
-    right: 0;
+    right: auto;
+    left: 0;
     bottom: 0;
-    width: 17.7rem;
-    height: 17.7rem;
-  }
-  .main-intro__circle-text > img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    width: 30rem;
+    height: 30rem;
   }
   .main-intro__number {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-family: "Neue Metana";
-    font-size: 10rem;
-    letter-spacing: -0.08em;
+    font-size: 9rem;
   }
   .main-intro__star-icon {
-    width: 9.7rem;
-    height: 9.7rem;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-  }
-  .main-intro__star-icon > img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    width: 8.4rem;
+    height: 8.4rem;
+    margin-bottom: 1.5rem;
+    margin-left: 0.6rem;
   }
   .main-intro__title {
-    margin-bottom: 6rem;
-    font-family: "Druk Wide Cyr";
-    font-weight: bold;
-    font-size: 7.2rem;
+    margin-top: -1rem;
+    margin-bottom: 4rem;
+    font-size: 5.2rem;
     line-height: 6.3rem;
-    text-transform: uppercase;
   }
   .main-intro__desc {
-    width: 50.5rem;
-    margin-left: 8rem;
-    margin-bottom: 6rem;
-    font-size: 2rem;
+    width: 61rem;
+    margin-left: 0;
+    margin-bottom: 7rem;
+    font-size: 2.8rem;
   }
   .main-intro__button {
-    margin-left: 8rem;
-  }
-  .main-intro__scroll-link {
-    margin: 12rem auto 0 auto;
-    -webkit-transform: translateX(-5rem);
-            transform: translateX(-5rem);
+    margin-left: 0;
   }
 }
 .basic-coin {

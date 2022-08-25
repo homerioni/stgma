@@ -107,99 +107,61 @@
     margin-bottom: 24rem;
 
     &__bg {
-      position: absolute;
-      z-index: -1;
-
-      > img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
-
       &--crystal {
-        left: 0;
-        top: 10.5rem;
-        width: 38rem;
-        height: 78.2rem;
-        filter: grayscale(1);
       }
 
       &--cards {
         right: 0;
-        top: 0;
-        width: 112.2rem;
-        height: 113.9rem;
-        overflow: hidden;
+        top: 30rem;
 
         > img {
-          transform: translateX(10rem);
+          transform: translateX(53.5rem);
         }
       }
     }
 
     &__container {
-      position: relative;
-      padding-left: 14rem;
+      padding: 0 4rem 44rem 4rem;
     }
 
     &__circle-text {
-      position: absolute;
-      right: 0;
+      right: auto;
+      left: 0;
       bottom: 0;
-      width: 17.7rem;
-      height: 17.7rem;
-
-      > img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
+      width: 30rem;
+      height: 30rem;
     }
 
     &__number {
-      display: flex;
-      align-items: center;
-      font-family: $met;
-      font-size: 10rem;
-      letter-spacing: -0.08em;
+      font-size: 9rem;
     }
 
     &__star-icon {
-      width: 9.7rem;
-      height: 9.7rem;
-      margin-bottom: 2rem;
-      margin-left: 2rem;
-
-      > img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
+      width: 8.4rem;
+      height: 8.4rem;
+      margin-bottom: 1.5rem;
+      margin-left: 0.6rem;
     }
 
     &__title {
-      margin-bottom: 6rem;
-      font-family: $druk;
-      font-weight: bold;
-      font-size: 7.2rem;
+      margin-top: -1rem;
+      margin-bottom: 4rem;
+      font-size: 5.2rem;
       line-height: 6.3rem;
-      text-transform: uppercase;
     }
 
     &__desc {
-      width: 50.5rem;
-      margin-left: 8rem;
-      margin-bottom: 6rem;
-      font-size: 2rem;
+      width: 61rem;
+      margin-left: 0;
+      margin-bottom: 7rem;
+      font-size: 2.8rem;
     }
 
     &__button {
-      margin-left: 8rem;
+      margin-left: 0;
     }
 
     &__scroll-link {
-      margin: 12rem auto 0 auto;
-      transform: translateX(-5rem);
     }
   }
 }
