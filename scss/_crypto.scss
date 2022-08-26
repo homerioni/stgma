@@ -268,3 +268,209 @@
     }
   }
 }
+
+@media (max-width: 48em) {
+  .crypto {
+    margin-bottom: 24rem;
+
+    &--markets {
+      //margin-bottom: 22rem;
+      //
+      //.table__content {
+      //  padding: 2.5rem 5rem 2.5rem 4rem;
+      //}
+      //
+      //.table__row-title {
+      //  padding: 0 5rem 0 4rem;
+      //}
+      //
+      //.crypto__table {
+      //  .table__column {
+      //    &:nth-child(1) {
+      //      width: 6rem;
+      //    }
+      //
+      //    &:nth-child(2) {
+      //      flex: auto;
+      //    }
+      //
+      //    &:nth-child(3) {
+      //      width: 26rem;
+      //    }
+      //
+      //    &:nth-child(4) {
+      //      width: 21.6rem;
+      //    }
+      //
+      //    &:nth-child(5) {
+      //      width: 21rem;
+      //      padding-right: 5.8rem;
+      //    }
+      //
+      //    &:nth-child(6) {
+      //      width: 18rem;
+      //      text-align: left;
+      //    }
+      //
+      //    &:nth-child(7) {
+      //      width: 20rem;
+      //      text-align: right;
+      //    }
+      //  }
+      //}
+    }
+
+    &__title-block {
+      display: block;
+    }
+
+    &__title {
+      margin-bottom: 7rem;
+      font-weight: 700;
+      font-size: 5.2rem;
+    }
+
+    &__more-link {
+      width: fit-content;
+      padding-bottom: 2.4rem;
+      font-size: 3rem;
+
+      > svg {
+        width: 6.2rem;
+        height: 4.2rem;
+        margin-left: 2rem;
+      }
+
+      &:hover {
+        transform: scale(1);
+      }
+    }
+
+    &__table {
+      .table__column {
+        font-size: 2.8rem;
+        letter-spacing: 0.05em;
+      }
+
+      .table__column-title {
+        font-size: 2.8rem;
+        letter-spacing: 0;
+      }
+    }
+
+    &__name-block {
+      justify-content: normal;
+    }
+
+    &__icon {
+      width: 6.4rem;
+      height: 6.4rem;
+      margin-bottom: 1rem;
+    }
+
+    &__name {
+      font-size: 3.6rem;
+    }
+
+    &__abbr {
+      font-size: 2.8rem;
+    }
+
+    &__trend {
+    }
+
+    &__graph {
+    }
+  }
+
+  .crypto-tab {
+    margin-bottom: 23rem;
+
+    &__title {
+      margin-bottom: 6rem;
+      font-family: $druk;
+      font-weight: 500;
+      font-size: 5.5rem;
+    }
+
+    &__table {
+      .table__column {
+        font-size: 2rem;
+
+        &:nth-child(1) {
+          width: 7.1rem;
+        }
+
+        &:nth-child(2) {
+          width: 48rem;
+        }
+
+        &:nth-child(3) {
+          width: 21rem;
+        }
+
+        &:nth-child(4) {
+          width: 21rem;
+        }
+      }
+
+      &--crypto-deposit {
+        .table__column {
+          font-size: 2rem;
+          letter-spacing: 0.05em;
+
+          &:nth-child(1) {
+            flex: auto;
+          }
+
+          &:nth-child(2) {
+            width: 27rem;
+          }
+
+          &:nth-child(3) {
+            width: 26rem;
+          }
+
+          &:nth-child(4) {
+            width: 27rem;
+          }
+
+          &:nth-child(5) {
+            width: 30rem;
+          }
+
+          &:nth-child(6) {
+            width: 14rem;
+          }
+        }
+      }
+
+      &--min-deposit {
+        .table__column {
+          font-size: 2rem;
+          letter-spacing: 0.05em;
+
+          &:nth-child(1) {
+            flex: auto;
+          }
+
+          &:nth-child(2) {
+            width: 31rem;
+          }
+
+          &:nth-child(3) {
+            width: 34rem;
+          }
+
+          &:nth-child(4) {
+            width: 35rem;
+          }
+
+          &:nth-child(5) {
+            width: 23rem;
+          }
+        }
+      }
+    }
+  }
+}

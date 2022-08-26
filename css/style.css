@@ -469,6 +469,48 @@ input[type=number] {
   .scroll {
     display: none;
   }
+
+  .table__row {
+    position: relative;
+    display: block;
+    padding: 4rem 4rem 4rem 9.6rem;
+  }
+  .table__row:hover {
+    background: -webkit-gradient(linear, left top, right top, color-stop(-11.24%, rgba(33, 31, 47, 0)), color-stop(49.5%, #211F2F), color-stop(107.76%, rgba(33, 31, 47, 0)));
+    background: linear-gradient(90deg, rgba(33, 31, 47, 0) -11.24%, #211F2F 49.5%, rgba(33, 31, 47, 0) 107.76%);
+  }
+  .table__row:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3019607843);
+  }
+  .table__row-number {
+    position: absolute;
+    left: 4rem;
+    top: 6rem;
+  }
+  .table .table__content .table__column:nth-child(n) {
+    width: 100%;
+  }
+  .table__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .table__column:not(:last-child, :first-child) {
+    margin-bottom: 3rem;
+  }
+  .table__column-title {
+    font-size: 2.8rem;
+  }
+  .table__content {
+    padding: 1rem 0;
+    border-radius: 4rem;
+  }
 }
 .header__container {
   display: -webkit-box;
@@ -1260,6 +1302,128 @@ body {
   width: 23rem;
 }
 
+@media (max-width: 48em) {
+  .crypto {
+    margin-bottom: 24rem;
+  }
+  .crypto__title-block {
+    display: block;
+  }
+  .crypto__title {
+    margin-bottom: 7rem;
+    font-weight: 700;
+    font-size: 5.2rem;
+  }
+  .crypto__more-link {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-bottom: 2.4rem;
+    font-size: 3rem;
+  }
+  .crypto__more-link > svg {
+    width: 6.2rem;
+    height: 4.2rem;
+    margin-left: 2rem;
+  }
+  .crypto__more-link:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .crypto__table .table__column {
+    font-size: 2.8rem;
+    letter-spacing: 0.05em;
+  }
+  .crypto__table .table__column-title {
+    font-size: 2.8rem;
+    letter-spacing: 0;
+  }
+  .crypto__name-block {
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+  }
+  .crypto__icon {
+    width: 6.4rem;
+    height: 6.4rem;
+    margin-bottom: 1rem;
+  }
+  .crypto__name {
+    font-size: 3.6rem;
+  }
+  .crypto__abbr {
+    font-size: 2.8rem;
+  }
+  .crypto-tab {
+    margin-bottom: 23rem;
+  }
+  .crypto-tab__title {
+    margin-bottom: 6rem;
+    font-family: "Druk Wide Cyr";
+    font-weight: 500;
+    font-size: 5.5rem;
+  }
+  .crypto-tab__table .table__column {
+    font-size: 2rem;
+  }
+  .crypto-tab__table .table__column:nth-child(1) {
+    width: 7.1rem;
+  }
+  .crypto-tab__table .table__column:nth-child(2) {
+    width: 48rem;
+  }
+  .crypto-tab__table .table__column:nth-child(3) {
+    width: 21rem;
+  }
+  .crypto-tab__table .table__column:nth-child(4) {
+    width: 21rem;
+  }
+  .crypto-tab__table--crypto-deposit .table__column {
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+  }
+  .crypto-tab__table--crypto-deposit .table__column:nth-child(1) {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+  }
+  .crypto-tab__table--crypto-deposit .table__column:nth-child(2) {
+    width: 27rem;
+  }
+  .crypto-tab__table--crypto-deposit .table__column:nth-child(3) {
+    width: 26rem;
+  }
+  .crypto-tab__table--crypto-deposit .table__column:nth-child(4) {
+    width: 27rem;
+  }
+  .crypto-tab__table--crypto-deposit .table__column:nth-child(5) {
+    width: 30rem;
+  }
+  .crypto-tab__table--crypto-deposit .table__column:nth-child(6) {
+    width: 14rem;
+  }
+  .crypto-tab__table--min-deposit .table__column {
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+  }
+  .crypto-tab__table--min-deposit .table__column:nth-child(1) {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+  }
+  .crypto-tab__table--min-deposit .table__column:nth-child(2) {
+    width: 31rem;
+  }
+  .crypto-tab__table--min-deposit .table__column:nth-child(3) {
+    width: 34rem;
+  }
+  .crypto-tab__table--min-deposit .table__column:nth-child(4) {
+    width: 35rem;
+  }
+  .crypto-tab__table--min-deposit .table__column:nth-child(5) {
+    width: 23rem;
+  }
+}
 .portable {
   position: relative;
   margin-bottom: 19rem;
