@@ -129,7 +129,7 @@ input[type=number] {
   html {
     font-size: 5px;
     font-size: 1.5625vw;
-    font-size: 1.3333333333vw;
+    font-size: 1.2077294686vw;
     -webkit-text-size-adjust: none;
   }
 
@@ -584,6 +584,18 @@ input[type=number] {
     -webkit-transform: translateY(-2.4rem) rotate(-45deg);
             transform: translateY(-2.4rem) rotate(-45deg);
   }
+  .header__burger-menu-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+  }
+  .header__burger-menu-bg > img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .header__logo {
     position: relative;
     z-index: 11;
@@ -883,7 +895,6 @@ body {
     width: 8.4rem;
     height: 8.4rem;
     margin-bottom: 1.5rem;
-    margin-left: 0.6rem;
   }
   .main-intro__title {
     margin-top: -1rem;
@@ -983,6 +994,42 @@ body {
   font-size: 2.5rem;
 }
 
+@media (max-width: 48em) {
+  .basic-coin {
+    margin-bottom: 24rem;
+  }
+  .basic-coin__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .basic-coin__item {
+    width: 35.4rem;
+    height: 23rem;
+    padding: 3rem 4rem;
+  }
+  .basic-coin__item:nth-child(n):before {
+    content: none;
+  }
+  .basic-coin__item:nth-child(n+3) {
+    margin-top: 4rem;
+  }
+  .basic-coin__img-box {
+    right: 2rem;
+    width: 12rem;
+    height: 12rem;
+  }
+  .basic-coin__name {
+    font-weight: 400;
+    font-size: 2.8rem;
+  }
+  .basic-coin__price {
+    font-size: 2.8rem;
+  }
+  .basic-coin__trend {
+    font-weight: 400;
+    font-size: 2.8rem;
+  }
+}
 .crypto {
   margin-bottom: 17rem;
 }

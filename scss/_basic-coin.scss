@@ -82,3 +82,52 @@
     font-size: 2.5rem;
   }
 }
+
+@media (max-width: 48em) {
+  .basic-coin {
+    margin-bottom: 24rem;
+
+    &__container {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 35.4rem;
+      height: 23rem;
+      padding: 3rem 4rem;
+
+      &:nth-child(n) {
+        &:before {
+          content: none;
+        }
+      }
+
+      &:nth-child(n + 3) {
+        margin-top: 4rem;
+      }
+    }
+
+    &__img-box {
+      right: 2rem;
+      width: 12rem;
+      height: 12rem;
+    }
+
+    &__box {
+    }
+
+    &__name {
+      font-weight: 400;
+      font-size: 2.8rem;
+    }
+
+    &__price {
+      font-size: 2.8rem;
+    }
+
+    &__trend {
+      font-weight: 400;
+      font-size: 2.8rem;
+    }
+  }
+}
