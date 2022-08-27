@@ -2117,6 +2117,60 @@ body {
      object-fit: fill;
 }
 
+@media (max-width: 48em) {
+  .trade-now {
+    margin-bottom: 24rem;
+  }
+  .trade-now__content {
+    display: block;
+    padding: 7rem 7rem 68rem 7rem;
+    border-radius: 4rem;
+  }
+  .trade-now__text-block {
+    width: 100%;
+  }
+  .trade-now__title {
+    font-weight: 700;
+    font-size: 5.2rem;
+  }
+  .trade-now__desc {
+    margin-bottom: 7rem;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+  }
+  .trade-now__buttons {
+    display: block;
+  }
+  .trade-now__btn-now {
+    margin-right: 0;
+    margin-bottom: 4rem;
+    background-color: #1F232B;
+  }
+  .trade-now__btn-how {
+    font-size: 2.8rem;
+  }
+  .trade-now__btn-how-icon {
+    width: 10.8rem;
+    height: 10.8rem;
+    margin-right: 2rem;
+    border-radius: 100%;
+    background-color: rgba(48, 49, 57, 0.7);
+  }
+  .trade-now__btn-how-icon > svg {
+    width: 2.4rem;
+    height: 3.4rem;
+  }
+  .trade-now__img-box {
+    position: absolute;
+    right: 50%;
+    bottom: -20rem;
+    top: auto;
+    width: 95.6rem;
+    height: 91rem;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
 .partners-min {
   margin-bottom: 17rem;
 }

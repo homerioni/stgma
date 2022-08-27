@@ -113,3 +113,70 @@
     }
   }
 }
+
+@media (max-width: 48em) {
+  .trade-now {
+    margin-bottom: 24rem;
+
+    &__content {
+      display: block;
+      padding: 7rem 7rem 68rem 7rem;
+      border-radius: 4rem;
+    }
+
+    &__bg {
+    }
+
+    &__text-block {
+      width: 100%;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 5.2rem;
+    }
+
+    &__desc {
+      margin-bottom: 7rem;
+      font-size: 2.8rem;
+      line-height: 3.4rem;
+    }
+
+    &__buttons {
+      display: block;
+    }
+
+    &__btn-now {
+      margin-right: 0;
+      margin-bottom: 4rem;
+      background-color: #1F232B;
+    }
+
+    &__btn-how {
+      font-size: 2.8rem;
+    }
+
+    &__btn-how-icon {
+      width: 10.8rem;
+      height: 10.8rem;
+      margin-right: 2rem;
+      border-radius: 100%;
+      background-color: rgba(48, 49, 57, 0.7);
+
+      > svg {
+        width: 2.4rem;
+        height: 3.4rem;
+      }
+    }
+
+    &__img-box {
+      position: absolute;
+      right: 50%;
+      bottom: -20rem;
+      top: auto;
+      width: 95.6rem;
+      height: 91rem;
+      transform: translateX(50%);
+    }
+  }
+}
