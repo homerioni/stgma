@@ -696,7 +696,7 @@ body {
 }
 @media (max-width: 48em) {
   body {
-    padding-bottom: 181.2rem;
+    padding-bottom: 119.2rem;
   }
 }
 
@@ -787,20 +787,9 @@ body {
   font-size: 2rem;
   color: #72757A;
 }
-.footer__request {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 300;
-  font-size: 1.6rem;
-  color: #72757A;
-}
 .footer__request-logo {
   display: block;
-  width: 17.7rem;
+  width: 30.5rem;
   height: 4rem;
   margin-left: 2.5rem;
 }
@@ -811,6 +800,89 @@ body {
      object-fit: contain;
 }
 
+@media (max-width: 48em) {
+  .footer__container {
+    position: relative;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: calc(100% - 8rem);
+    margin: 0 4rem;
+    padding: 8rem 2rem 2rem 2rem;
+  }
+  .footer__separator-mob {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #9D99AF;
+    opacity: 0.1;
+  }
+  .footer__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20rem;
+  }
+  .footer__logo {
+    width: 26.8rem;
+    height: 20rem;
+    margin-bottom: 0;
+  }
+  .footer__logo > img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .footer__socials {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 50%;
+    padding: 0 2.6rem;
+  }
+  .footer__social-link {
+    width: 6rem;
+    height: 6rem;
+  }
+  .footer__social-link:not(:last-child) {
+    margin-right: 0;
+  }
+  .footer__list {
+    width: 50%;
+    min-height: 50rem;
+    height: auto;
+    padding: 0 2rem;
+    margin-right: 0;
+    border-left: none;
+  }
+  .footer__list-item {
+    font-size: 2.8rem;
+  }
+  .footer__list-item:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  .footer__request-block {
+    width: calc(100% - 8rem);
+    padding: 5rem 2rem;
+    margin: 0 4rem;
+  }
+  .footer__copyright {
+    font-size: 2.8rem;
+  }
+  .footer__request-logo {
+    display: block;
+    width: 34.8rem;
+    height: 9rem;
+    margin-left: 2rem;
+  }
+}
 .main-intro {
   margin-top: 13rem;
   margin-bottom: 20rem;
@@ -2487,13 +2559,6 @@ body {
 @media (max-width: 48em) {
   .latest-news {
     margin-bottom: 24rem;
-  }
-  .latest-news__bg {
-    position: absolute;
-    left: 0;
-    top: -40rem;
-    z-index: -1;
-    width: 100%;
   }
   .latest-news__title-block {
     display: block;
