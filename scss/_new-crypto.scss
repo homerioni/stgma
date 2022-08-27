@@ -113,3 +113,91 @@
   &__trend {
   }
 }
+
+@media (max-width: 48em) {
+  .new-crypto {
+    margin-bottom: 24rem;
+
+    &__container {
+      position: relative;
+      flex-direction: column;
+      align-items: normal;
+      justify-content: normal;
+      padding-bottom: 18rem;
+      margin-bottom: 3rem;
+    }
+
+    &__desc-block {
+      order: 2;
+      width: 61rem;
+    }
+
+    &__desc {
+      font-size: 2.8rem;
+      line-height: 3.4rem;
+    }
+
+    &__qty-new {
+      font-size: 2.8rem;
+    }
+
+    &__title {
+      width: 100%;
+      margin-bottom: 4rem;
+      font-weight: 700;
+      font-size: 5.2rem;
+    }
+
+    &__circle-text {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 30rem;
+      height: 30rem;
+    }
+
+    &__slider {
+      margin-top: 0;
+      padding: 0 13rem 0 7rem;
+
+      .swiper-wrapper {
+        justify-content: center;
+      }
+    }
+
+    &__slide {
+      padding: 4rem;
+      border-radius: 4rem;
+    }
+
+    &__item-img {
+      width: 6.4rem;
+      height: 6.4rem;
+    }
+
+    &__item-content {
+      flex: auto;
+      margin-top: 2rem;
+      font-size: 3.6rem;
+    }
+
+    &__title-block {
+      margin-bottom: 5rem;
+    }
+
+    &__name {
+    }
+
+    &__abbr {
+    }
+
+    &__price-block {
+    }
+
+    &__price {
+    }
+
+    &__trend {
+    }
+  }
+}
