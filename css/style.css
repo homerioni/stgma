@@ -2119,7 +2119,9 @@ body {
 
 @media (max-width: 48em) {
   .trade-now {
-    margin-bottom: 24rem;
+    margin-bottom: 0;
+    padding-bottom: 24rem;
+    overflow: hidden;
   }
   .trade-now__content {
     display: block;
@@ -2320,6 +2322,37 @@ body {
   stroke: white;
 }
 
+@media (max-width: 48em) {
+  .partners-min {
+    margin-bottom: 24rem;
+  }
+  .partners-min__container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .partners-min__container::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+  .partners-min__item {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    max-width: none;
+    width: 44rem;
+    height: auto;
+  }
+  .partners-min__item:nth-child(4n) {
+    margin-right: 13rem;
+  }
+  .partners-min__item:nth-child(n+5) {
+    margin-top: 0;
+  }
+  .partners-min__item:last-child {
+    margin-right: 0;
+  }
+}
 .latest-news {
   position: relative;
   margin-bottom: 20rem;
@@ -2451,6 +2484,75 @@ body {
   font-size: 2rem;
 }
 
+@media (max-width: 48em) {
+  .latest-news {
+    margin-bottom: 24rem;
+  }
+  .latest-news__bg {
+    position: absolute;
+    left: 0;
+    top: -40rem;
+    z-index: -1;
+    width: 100%;
+  }
+  .latest-news__title-block {
+    display: block;
+  }
+  .latest-news__title {
+    margin-bottom: 7rem;
+    font-weight: 700;
+    font-size: 5.2rem;
+  }
+  .latest-news__more-link {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+  }
+  .latest-news__more-link > svg {
+    width: 6.2rem;
+    height: 4.2rem;
+    margin-left: 2rem;
+  }
+  .latest-news__more-link:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .latest-news__cards {
+    display: block;
+  }
+  .latest-news__item {
+    display: block;
+    width: 100%;
+    min-height: auto;
+    padding: 0 4rem 5rem 4rem;
+    border-radius: 4rem;
+  }
+  .latest-news__item:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  .latest-news__img-box {
+    position: static;
+    width: calc(100% + 8rem);
+    height: 34.8rem;
+    margin: 0 -4rem 5rem -4rem;
+    border-radius: inherit;
+  }
+  .latest-news__item-title {
+    font-size: 3.6rem;
+  }
+  .latest-news__arrow {
+    width: 7.2rem;
+    height: 4.8rem;
+    margin-left: 2rem;
+  }
+  .latest-news__item-desc {
+    margin-top: 4rem;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+  }
+}
 .intro {
   min-height: 30rem;
   margin: 8rem 0 23rem 0;

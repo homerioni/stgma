@@ -1,3 +1,5 @@
+@import "param";
+
 .partners-min {
   margin-bottom: 17rem;
 
@@ -139,6 +141,41 @@
 
       > path {
         stroke: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .partners-min {
+    margin-bottom: 24rem;
+
+    &__container {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+
+      &::-webkit-scrollbar {
+        height: 0;
+        width: 0;
+      }
+    }
+
+    &__item {
+      flex: none;
+      max-width: none;
+      width: 44rem;
+      height: auto;
+
+      &:nth-child(4n) {
+        margin-right: 13rem;
+      }
+
+      &:nth-child(n + 5) {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
       }
     }
   }

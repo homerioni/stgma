@@ -116,7 +116,9 @@
 
 @media (max-width: 48em) {
   .trade-now {
-    margin-bottom: 24rem;
+    margin-bottom: 0;
+    padding-bottom: 24rem;
+    overflow: hidden;
 
     &__content {
       display: block;
