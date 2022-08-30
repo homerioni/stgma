@@ -3350,6 +3350,69 @@ body {
      object-fit: contain;
 }
 
+@media (max-width: 48em) {
+  .bank {
+    margin-bottom: 24rem;
+  }
+  .bank__title {
+    margin-bottom: 7rem;
+    font-weight: 700;
+    font-size: 5.2rem;
+  }
+  .bank__cards {
+    display: block;
+  }
+  .bank__item {
+    width: 100%;
+    padding: 7rem 4rem 11rem 4rem;
+    border-radius: 2rem;
+  }
+  .bank__item:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  .bank__text-block {
+    width: 61rem;
+  }
+  .bank__item-title {
+    margin-top: 0;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    font-size: 5.2rem;
+  }
+  .bank__text {
+    margin-bottom: 7rem;
+    font-size: 2.8rem;
+  }
+  .bank__text-float {
+    display: block;
+    width: 8rem;
+    height: 6rem;
+    float: right;
+  }
+  .bank__btn {
+    min-width: 46rem;
+    height: 10rem;
+    padding: 0 6rem;
+    background-color: rgb(33, 35, 43);
+    border: none;
+    font-family: "Druk Wide Cyr";
+    font-weight: 500;
+    font-size: 3rem;
+  }
+  .bank__btn:after {
+    content: "";
+  }
+  .bank__btn .button__icon {
+    margin-top: 1rem;
+  }
+  .bank__img-box {
+    position: absolute;
+    right: 4rem;
+    top: 4rem;
+    width: 14rem;
+    height: 14rem;
+  }
+}
 .about-intro {
   margin-top: 8rem;
   margin-bottom: 18rem;
