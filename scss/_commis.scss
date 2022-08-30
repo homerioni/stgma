@@ -40,7 +40,7 @@
       display: block;
       width: calc(100% + 2px);
       height: calc(100% + 2px);
-      border-radius: 2rem;
+      border-radius: inherit;
       background: radial-gradient(94.31% 66.31% at -53.25% 10.23%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%),
       radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%),
       radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%),
@@ -65,7 +65,7 @@
       display: block;
       width: 100%;
       height: 100%;
-      border-radius: 2rem;
+      border-radius: inherit;
       background: rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(40px);
     }
@@ -104,6 +104,66 @@
 
     &:nth-child(3) {
       flex: auto;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .commis {
+    margin-bottom: 24rem;
+
+    &__container {
+      display: block;
+    }
+
+    &__item {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 24rem;
+      }
+    }
+
+    &__title {
+      min-height: 18.8rem;
+      margin-bottom: 4rem;
+      padding: 5rem 6.8rem;
+      border-radius: 4rem;
+      font-size: 3.6rem;
+      text-align: center;
+    }
+
+    &__table {
+      padding: 3rem 4rem;
+      border-radius: 4rem;
+    }
+
+    &__row {
+      align-items: normal;
+      min-height: auto;
+      padding: 3rem 0;
+      font-size: 2.8rem;
+
+      &--title {
+        font-weight: 600;
+        font-size: 3.6rem;
+      }
+    }
+
+    &__column {
+       &:nth-child(1) {
+        width: 20rem;
+        margin-right: 2rem;
+      }
+
+      &:nth-child(2) {
+        width: 20rem;
+        margin-right: 2rem;
+      }
+
+      &:nth-child(3) {
+        flex: auto;
+      }
     }
   }
 }

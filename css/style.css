@@ -3058,7 +3058,7 @@ body {
   display: block;
   width: calc(100% + 2px);
   height: calc(100% + 2px);
-  border-radius: 2rem;
+  border-radius: inherit;
   background: radial-gradient(94.31% 66.31% at -53.25% 10.23%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%), radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%), radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%), -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.05)), to(rgba(255, 255, 255, 0.05)));
   background: radial-gradient(94.31% 66.31% at -53.25% 10.23%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%), radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%), radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
 }
@@ -3081,7 +3081,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 2rem;
+  border-radius: inherit;
   background: rgba(255, 255, 255, 0.05);
   -webkit-backdrop-filter: blur(40px);
           backdrop-filter: blur(40px);
@@ -3125,6 +3125,57 @@ body {
           flex: auto;
 }
 
+@media (max-width: 48em) {
+  .commis {
+    margin-bottom: 24rem;
+  }
+  .commis__container {
+    display: block;
+  }
+  .commis__item {
+    width: 100%;
+  }
+  .commis__item:not(:last-child) {
+    margin-bottom: 24rem;
+  }
+  .commis__title {
+    min-height: 18.8rem;
+    margin-bottom: 4rem;
+    padding: 5rem 6.8rem;
+    border-radius: 4rem;
+    font-size: 3.6rem;
+    text-align: center;
+  }
+  .commis__table {
+    padding: 3rem 4rem;
+    border-radius: 4rem;
+  }
+  .commis__row {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    min-height: auto;
+    padding: 3rem 0;
+    font-size: 2.8rem;
+  }
+  .commis__row--title {
+    font-weight: 600;
+    font-size: 3.6rem;
+  }
+  .commis__column:nth-child(1) {
+    width: 20rem;
+    margin-right: 2rem;
+  }
+  .commis__column:nth-child(2) {
+    width: 20rem;
+    margin-right: 2rem;
+  }
+  .commis__column:nth-child(3) {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+  }
+}
 .commis-tab {
   margin-bottom: 18rem;
 }
