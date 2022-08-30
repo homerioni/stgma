@@ -2926,7 +2926,7 @@ body {
   display: block;
   width: calc(100% + 2px);
   height: calc(100% + 2px);
-  border-radius: 2rem;
+  border-radius: inherit;
   background: radial-gradient(94.31% 66.31% at -53.25% 10.23%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%), radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%), radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%), -webkit-gradient(linear, left bottom, left top, from(#141720), to(#141720));
   background: radial-gradient(94.31% 66.31% at -53.25% 10.23%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%), radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%), radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #141720, #141720);
 }
@@ -2970,6 +2970,39 @@ body {
   font-size: 2rem;
 }
 
+@media (max-width: 48em) {
+  .type-doc {
+    margin-bottom: 24rem;
+  }
+  .type-doc__title {
+    width: 100%;
+    font-weight: 700;
+    font-size: 5.2rem;
+  }
+  .type-doc__item {
+    width: 100%;
+    padding: 5rem 4rem;
+    border-radius: 4rem;
+  }
+  .type-doc__item:nth-child(n) {
+    margin: 0;
+  }
+  .type-doc__item:nth-child(n+2) {
+    margin-top: 4rem;
+  }
+  .type-doc__icon {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 6rem;
+  }
+  .type-doc__item-title {
+    margin-bottom: 4rem;
+    font-size: 3.6rem;
+  }
+  .type-doc__item-desc {
+    font-size: 2.8rem;
+  }
+}
 .commis {
   margin-bottom: 18rem;
 }
