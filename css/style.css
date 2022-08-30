@@ -489,6 +489,7 @@ input[type=number] {
   }
   .table .table__content .table__column:nth-child(n) {
     width: 100%;
+    text-align: right;
   }
   .table__column {
     display: -webkit-box;
@@ -505,6 +506,10 @@ input[type=number] {
     margin-bottom: 3rem;
   }
   .table__column-title {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    margin-right: 6rem;
     font-size: 2.8rem;
   }
   .table__content {
@@ -2833,6 +2838,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 27rem;
+  padding: 0 4rem;
   margin-right: 5rem;
   font-size: 1.6rem;
   text-align: center;
@@ -2859,6 +2865,33 @@ body {
      object-fit: contain;
 }
 
+@media (max-width: 48em) {
+  .requirement {
+    margin-bottom: 24rem;
+  }
+  .requirement__title {
+    font-weight: 700;
+    font-size: 5.2rem;
+  }
+  .requirement__table .table__column {
+    font-size: 2.8rem;
+  }
+  .requirement__table .table__column:nth-child(n) {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+    margin-right: 0;
+    font-size: 2.8rem;
+  }
+  .requirement__table .table__row-number {
+    top: 4rem;
+  }
+  .requirement__icon-yes-no {
+    width: 4rem;
+    height: 4rem;
+  }
+}
 .type-doc {
   margin-bottom: 23rem;
 }

@@ -367,6 +367,7 @@
 
     .table__content .table__column:nth-child(n) {
       width: 100%;
+      text-align: right;
     }
 
     &__column {
@@ -380,6 +381,8 @@
     }
 
     &__column-title {
+      flex: none;
+      margin-right: 6rem;
       font-size: 2.8rem;
     }
 
