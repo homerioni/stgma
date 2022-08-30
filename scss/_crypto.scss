@@ -384,34 +384,20 @@
   }
 
   .crypto-tab {
-    margin-bottom: 23rem;
+    margin-bottom: 24rem;
+    overflow: hidden;
 
     &__title {
-      margin-bottom: 6rem;
-      font-family: $druk;
-      font-weight: 500;
-      font-size: 5.5rem;
+      margin-bottom: 7rem;
+      font-weight: 700;
+      font-size: 5.2rem;
     }
 
     &__table {
+      padding: 1rem 0;
+
       .table__column {
-        font-size: 2rem;
-
-        &:nth-child(1) {
-          width: 7.1rem;
-        }
-
-        &:nth-child(2) {
-          width: 48rem;
-        }
-
-        &:nth-child(3) {
-          width: 21rem;
-        }
-
-        &:nth-child(4) {
-          width: 21rem;
-        }
+        font-size: 2.8rem;
       }
 
       &--crypto-deposit {
