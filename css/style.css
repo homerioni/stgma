@@ -516,6 +516,21 @@ input[type=number] {
     padding: 1rem 0;
     border-radius: 4rem;
   }
+  .tabs-table__tab {
+    min-width: auto;
+    height: 18rem;
+    padding: 0 4rem;
+    border-radius: 4rem 4rem 0 0;
+    font-size: 3.6rem;
+  }
+  .tabs-table__tab.active:first-child:before {
+    width: 4rem;
+    height: 4rem;
+  }
+  .tabs-table__tab-content {
+    padding: 5rem 4rem;
+    border-radius: 4rem;
+  }
 }
 .header__container {
   display: -webkit-box;
@@ -3207,6 +3222,57 @@ body {
   letter-spacing: 0.05em;
 }
 
+@media (max-width: 48em) {
+  .commis-tab {
+    margin-bottom: 24rem;
+  }
+  .commis-tab__title {
+    margin-bottom: 4rem;
+    font-weight: 700;
+    font-size: 5.2rem;
+  }
+  .commis-tab__desc {
+    margin-bottom: 7rem;
+    font-size: 2.8rem;
+  }
+  .commis-tab__table .tabs-table__tab-content {
+    padding: 0;
+  }
+  .commis-tab__table .table__row-title {
+    padding: 5rem 4rem 1.4rem 4rem;
+    margin-bottom: 0;
+    font-size: 2.8rem;
+  }
+  .commis-tab__table .table__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-height: 12rem;
+    padding: 2.6rem 4rem;
+    border-bottom: none;
+  }
+  .commis-tab__table .tabs-table__tab-content .table__column {
+    font-size: 2.8rem;
+  }
+  .commis-tab__table .tabs-table__tab-content .table__column:nth-child(2) {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 22.6rem;
+    margin: 0 4rem 0 0;
+    text-align: left;
+  }
+  .commis-tab__table .tabs-table__tab-content .table__column:nth-child(3) {
+    font-size: 2.8rem;
+    text-align: left;
+  }
+}
 .bank {
   margin-bottom: 17rem;
 }

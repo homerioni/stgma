@@ -408,4 +408,34 @@
       //}
     }
   }
+
+  .tabs-table {
+    &--bg-even {
+    }
+
+    &__tabs {
+    }
+
+    &__tab {
+      min-width: auto;
+      height: 18rem;
+      padding: 0 4rem;
+      border-radius: 4rem 4rem 0 0;
+      font-size: 3.6rem;
+
+      &.active {
+        &:first-child {
+          &:before {
+            width: 4rem;
+            height: 4rem;
+          }
+        }
+      }
+    }
+
+    &__tab-content {
+      padding: 5rem 4rem;
+      border-radius: 4rem;
+    }
+  }
 }

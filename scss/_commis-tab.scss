@@ -36,3 +36,59 @@
     }
   }
 }
+
+@media (max-width: 48em) {
+  .commis-tab {
+    margin-bottom: 24rem;
+
+    &__title {
+      margin-bottom: 4rem;
+      font-weight: 700;
+      font-size: 5.2rem;
+    }
+
+    &__desc {
+      margin-bottom: 7rem;
+      font-size: 2.8rem;
+    }
+
+    &__table {
+      .tabs-table__tab-content {
+        padding: 0;
+      }
+
+      .table__row-title {
+        padding: 5rem 4rem 1.4rem 4rem;
+        margin-bottom: 0;
+        font-size: 2.8rem;
+      }
+
+      .table__row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        min-height: 12rem;
+        padding: 2.6rem 4rem;
+        border-bottom: none;
+      }
+
+      .tabs-table__tab-content {
+        .table__column {
+          font-size: 2.8rem;
+
+          &:nth-child(2) {
+            flex: none;
+            width: 22.6rem;
+            margin: 0 4rem 0 0;
+            text-align: left;
+          }
+
+          &:nth-child(3) {
+            font-size: 2.8rem;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
