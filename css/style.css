@@ -1929,6 +1929,7 @@ body {
 }
 .new-crypto__slider {
   margin-top: 7rem;
+  padding: 0 43rem 0 18rem;
 }
 .new-crypto__slider .swiper-wrapper {
   -webkit-box-pack: center;
@@ -2647,6 +2648,18 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 48em) {
+  .intro {
+    min-height: 13rem;
+    margin: 7rem 0 39rem 0;
+  }
+  .intro__title {
+    width: 52rem;
+    margin: 0 auto 0 auto;
+    font-weight: 700;
+    font-size: 5.2rem;
+  }
+}
 .check-list {
   margin-bottom: 18rem;
 }
@@ -4254,12 +4267,12 @@ body {
 .feedback__label.focus:after {
   content: "";
   position: absolute;
-  left: -2px;
-  top: -2px;
+  left: -1px;
+  top: -1px;
   z-index: -1;
   display: block;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
   border-radius: 100rem;
   background: radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%), radial-gradient(94.31% 66.31% at -53.25% 10.23%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%);
 }

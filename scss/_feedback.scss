@@ -53,12 +53,12 @@
       &:after {
         content: '';
         position: absolute;
-        left: -2px;
-        top: -2px;
+        left: -1px;
+        top: -1px;
         z-index: -1;
         display: block;
-        width: calc(100% + 4px);
-        height: calc(100% + 4px);
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
         border-radius: 100rem;
         background: radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%),
         radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%),

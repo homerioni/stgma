@@ -34,7 +34,7 @@ const new_crypto_slider = new Swiper('.new-crypto__slider', {
     direction: 'horizontal',
 
     autoplay: {
-        duration: 3000,
+        duration: 4000,
     },
 
     breakpoints: {
@@ -49,7 +49,7 @@ const new_crypto_slider = new Swiper('.new-crypto__slider', {
         },
 
         769: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: rem(5),
 
             grid: {

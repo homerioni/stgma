@@ -31,3 +31,23 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: 48em) {
+  .intro {
+    min-height: 13rem;
+    margin: 7rem 0 39rem 0;
+
+    &__bg {
+    }
+
+    &__title {
+      width: 52rem;
+      margin: 0 auto 0 auto;
+      font-weight: 700;
+      font-size: 5.2rem;
+    }
+
+    &__scroll {
+    }
+  }
+}
