@@ -401,60 +401,71 @@
       }
 
       &--crypto-deposit {
-        .table__column {
-          font-size: 2rem;
-          letter-spacing: 0.05em;
+        padding-bottom: 2rem;
 
-          &:nth-child(1) {
-            flex: auto;
+        .table__row {
+          display: flex;
+          align-items: center;
+          padding: 0;
+          border-bottom: none;
+
+          .table__column {
+            font-size: 2.8rem;
+            margin: 0;
+            padding: 2rem 0;
+
+            &:nth-child(2) {
+              width: 23rem;
+            }
+
+            &:nth-child(3) {
+              width: 14rem;
+            }
+
+            &:nth-child(4) {
+              width: 22rem;
+            }
+
+            &:nth-child(6) {
+              flex: auto;
+              width: auto;
+            }
           }
+        }
 
-          &:nth-child(2) {
-            width: 27rem;
-          }
+        .table__row-title {
+          align-items: flex-start;
+          margin-bottom: 2rem;
 
-          &:nth-child(3) {
-            width: 26rem;
-          }
+          .table__column {
+            font-size: 2.8rem;
+            margin: 0;
 
-          &:nth-child(4) {
-            width: 27rem;
-          }
+            &:nth-child(2) {
+              width: 23rem;
+            }
 
-          &:nth-child(5) {
-            width: 30rem;
-          }
+            &:nth-child(3) {
+              width: 14rem;
+            }
 
-          &:nth-child(6) {
-            width: 14rem;
+            &:nth-child(4) {
+              width: 22rem;
+            }
+
+            &:nth-child(6) {
+              flex: auto;
+              width: auto;
+            }
           }
         }
       }
 
       &--min-deposit {
+        padding: 1rem 0;
+
         .table__column {
-          font-size: 2rem;
-          letter-spacing: 0.05em;
-
-          &:nth-child(1) {
-            flex: auto;
-          }
-
-          &:nth-child(2) {
-            width: 31rem;
-          }
-
-          &:nth-child(3) {
-            width: 34rem;
-          }
-
-          &:nth-child(4) {
-            width: 35rem;
-          }
-
-          &:nth-child(5) {
-            width: 23rem;
-          }
+          font-size: 2.8rem;
         }
       }
     }
