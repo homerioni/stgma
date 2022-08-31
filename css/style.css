@@ -712,11 +712,11 @@ input[type=number] {
 body {
   min-height: 100vh;
   position: relative;
-  padding-bottom: 54.5rem;
+  padding-bottom: 46.5rem;
 }
 @media (max-width: 48em) {
   body {
-    padding-bottom: 119.2rem;
+    padding-bottom: 111.2rem;
   }
 }
 
@@ -4018,7 +4018,7 @@ body {
   }
 }
 .contacts {
-  margin-bottom: 10rem;
+  margin-bottom: 18rem;
 }
 .contacts__title {
   margin-bottom: 6rem;
@@ -4079,6 +4079,7 @@ body {
   width: 100%;
   height: 53rem;
   padding: 1px;
+  border-radius: 2rem;
 }
 .contacts__map:after {
   content: "";
@@ -4089,13 +4090,13 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 2rem;
+  border-radius: inherit;
   background: radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%), radial-gradient(94.31% 66.31% at -53.25% 10.23%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%);
 }
 .contacts__map #map {
   width: 100%;
   height: 100%;
-  border-radius: 2rem;
+  border-radius: inherit;
   overflow: hidden;
 }
 .contacts__map #map .ymaps-2-1-79-ground-pane {
@@ -4104,6 +4105,44 @@ body {
   -webkit-filter: invert(0.9) grayscale(1);
   -moz-filter: invert(0.9) grayscale(1);
   -o-filter: invert(0.9) grayscale(1);
+}
+@media (max-width: 48em) {
+  .contacts {
+    margin-bottom: 24rem;
+  }
+  .contacts__title {
+    margin-bottom: 8rem;
+    font-weight: 700;
+    font-size: 5.2rem;
+  }
+  .contacts__links {
+    display: block;
+    margin-bottom: 8rem;
+  }
+  .contacts__link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacts__link:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+  .contacts__link-icon {
+    width: 12rem;
+    height: 12rem;
+    margin-right: 4rem;
+  }
+  .contacts__link-title {
+    margin-bottom: 2rem;
+    font-size: 3.6rem;
+  }
+  .contacts__link-contact {
+    font-size: 2.8rem;
+  }
+  .contacts__map {
+    height: 110rem;
+    border-radius: 4rem;
+  }
 }
 .security {
   margin-bottom: 21rem;
