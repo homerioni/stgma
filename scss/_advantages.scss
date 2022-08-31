@@ -28,7 +28,33 @@
     min-height: 44.4rem;
     padding: 25rem 26.4rem 7.9rem 5rem;
     border-radius: 2rem;
-    background-color: #141720;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      background-color: #141720;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      z-index: -2;
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      border-radius: inherit;
+      background: radial-gradient(41.06% 41.06% at 51.09% -22.85%, #000000 0%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%),
+      radial-gradient(94.31% 66.31% at -53.25% 10.23%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%);
+    }
   }
 
   &__slide-bg {
@@ -38,12 +64,14 @@
     z-index: -1;
     width: 100%;
     height: 100%;
+    border-radius: inherit;
 
     > img {
       width: 100%;
       height: 100%;
       object-fit: contain;
       object-position: top right;
+      border-radius: inherit;
     }
   }
 
@@ -88,6 +116,74 @@
   .advantages__pagination {
     .swiper-pagination-bullet {
       margin: 0 1rem;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .advantages {
+    margin-bottom: 24rem;
+
+    &__sub-title {
+      margin: 0 auto 4rem auto;
+      font-size: 2.8rem;
+    }
+
+    &__title {
+      width: 100%;
+      font-weight: 700;
+      font-size: 5.2rem;
+    }
+
+    &__slider {
+    }
+
+    &__slide {
+      min-height: 54rem;
+      padding: 27rem 4rem 5rem 4rem;
+      border-radius: 4rem;
+    }
+
+    &__slide-bg {
+    }
+
+    &__img-box {
+      position: absolute;
+      right: 2.8rem;
+      top: 2rem;
+      width: 17rem;
+      height: 17rem;
+    }
+
+    &__slide-title {
+      margin-bottom: 4rem;
+      font-size: 3.6rem;
+    }
+
+    &__slide-desc {
+      font-size: 2.8rem;
+    }
+
+    &__pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .swiper-pagination-bullet {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+
+      .swiper-pagination-bullet-active {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
+
+    .advantages__pagination {
+      .swiper-pagination-bullet {
+        margin: 0 2rem;
+      }
     }
   }
 }

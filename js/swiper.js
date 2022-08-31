@@ -62,8 +62,6 @@ const new_crypto_slider = new Swiper('.new-crypto__slider', {
 
 const advantages_slider = new Swiper('.advantages__slider', {
     direction: 'horizontal',
-    slidesPerView: 2.2,
-    spaceBetween: rem(7.4),
     loop: true,
     centeredSlides: true,
 
@@ -74,5 +72,17 @@ const advantages_slider = new Swiper('.advantages__slider', {
     pagination: {
         el: '.advantages__pagination',
         type: 'bullets',
+    },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1.4,
+            spaceBetween: rem(2),
+        },
+
+        769: {
+            slidesPerView: 2.2,
+            spaceBetween: rem(7.4),
+        },
     },
 });
