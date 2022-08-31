@@ -661,9 +661,9 @@ input[type=number] {
   .header__logo {
     position: relative;
     z-index: 11;
-    width: 26.8rem;
-    height: 20rem;
-    margin-right: 0;
+    width: 32.2rem;
+    height: 24rem;
+    margin: -2rem 0 -2rem 0;
   }
   .header__burger-menu {
     display: none;
@@ -3541,7 +3541,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 3rem;
+  border-radius: inherit;
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
 .about-intro__box--users {
@@ -3679,6 +3679,8 @@ body {
   margin-bottom: 4rem;
   border-radius: 100%;
   background: linear-gradient(57.93deg, #8470FF 8.49%, #FF93BD 104.67%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  -webkit-box-shadow: 0.6rem 1.5rem 6rem 0 #D1D2E4;
+          box-shadow: 0.6rem 1.5rem 6rem 0 #D1D2E4;
 }
 .about-intro__users-img-box > img {
   width: 60%;
@@ -3732,6 +3734,122 @@ body {
   background-color: white;
   font-size: 3rem;
   color: #656A77;
+}
+@media (max-width: 48em) {
+  .about-intro {
+    margin-top: 10rem;
+    margin-bottom: 24rem;
+  }
+  .about-intro__container {
+    display: block;
+  }
+  .about-intro__text-block {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 17rem;
+  }
+  .about-intro__title {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 5.2rem;
+  }
+  .about-intro__image-block {
+    width: 46.4rem;
+    height: 46.4rem;
+    margin-right: 0;
+    margin-left: 17.3rem;
+    -webkit-box-shadow: -2.4rem -3.4rem 5.4rem 0 rgba(172, 60, 225, 0.76) inset, 0 1.4rem 2.7rem 0 rgba(194, 255, 255, 0.25) inset, 0 0 1.6rem 0 rgba(255, 255, 255, 0.26) inset;
+            box-shadow: -2.4rem -3.4rem 5.4rem 0 rgba(172, 60, 225, 0.76) inset, 0 1.4rem 2.7rem 0 rgba(194, 255, 255, 0.25) inset, 0 0 1.6rem 0 rgba(255, 255, 255, 0.26) inset;
+  }
+  .about-intro__box {
+    border-radius: 2.5rem;
+  }
+  .about-intro__box--users {
+    left: -18.4rem;
+    top: 1.5rem;
+    width: 20rem;
+  }
+  .about-intro__box--users:before {
+    -webkit-backdrop-filter: blur(25px);
+            backdrop-filter: blur(25px);
+  }
+  .about-intro__box--users .about-intro__text {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+  .about-intro__box--users .about-intro__text--gradient {
+    margin-bottom: 2rem;
+    font-size: 3.8rem;
+  }
+  .about-intro__box--crypto {
+    left: -15.8rem;
+    bottom: 8rem;
+    padding: 1rem 2.2rem;
+    font-size: 1.8rem;
+  }
+  .about-intro__box--crypto:before {
+    -webkit-backdrop-filter: blur(17px);
+            backdrop-filter: blur(17px);
+  }
+  .about-intro__box--no-risk {
+    right: -9.6rem;
+    top: 0.4rem;
+    width: 14rem;
+    padding: 2.2rem 2.4rem 1.4rem 2.4rem;
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+  }
+  .about-intro__box--no-risk .about-intro__icon {
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-bottom: 1.4rem;
+  }
+  .about-intro__box--no-risk .about-intro__text {
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+  .about-intro__box--working {
+    right: -12rem;
+    bottom: -0.7rem;
+    width: 15.6rem;
+    padding: 2rem 0 1.4rem 0;
+    -webkit-backdrop-filter: blur(17px);
+            backdrop-filter: blur(17px);
+  }
+  .about-intro__box--working .about-intro__icon {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 0.7rem;
+  }
+  .about-intro__box--working .about-intro__text {
+    width: 10rem;
+    font-size: 1.8rem;
+  }
+  .about-intro__users-img-box {
+    width: 9.8rem;
+    height: 9.8rem;
+    margin-top: -3.6rem;
+    margin-bottom: 4rem;
+    -webkit-box-shadow: 0.5rem 1.2rem 5rem 0 #D1D2E4;
+            box-shadow: 0.5rem 1.2rem 5rem 0 #D1D2E4;
+  }
+  .about-intro__users-img-box:before {
+    width: 11.5rem;
+    height: 11.5rem;
+  }
+  .about-intro__users-img-box:after {
+    width: 13.3rem;
+    height: 13.3rem;
+  }
+  .about-intro__users-circle {
+    width: 3.2rem;
+    height: 3.2rem;
+    padding-bottom: 0.8rem;
+    margin-bottom: -1.6rem;
+    font-size: 2.6rem;
+  }
 }
 .advantages {
   margin-bottom: 18rem;

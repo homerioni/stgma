@@ -111,7 +111,7 @@
       display: block;
       width: 100%;
       height: 100%;
-      border-radius: 3rem;
+      border-radius: inherit;
       border: 1px solid rgba(255, 255, 255, 0.12);
     }
 
@@ -234,6 +234,7 @@
     border-radius: 100%;
     background: linear-gradient(57.93deg, #8470FF 8.49%, #FF93BD 104.67%),
     linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    box-shadow: 0.6rem 1.5rem 6rem 0 #D1D2E4;
 
     > img {
       width: 60%;
@@ -290,5 +291,189 @@
   }
 
   &__icon {
+  }
+}
+
+@media (max-width: 48em) {
+  .about-intro {
+    margin-top: 10rem;
+    margin-bottom: 24rem;
+
+    &--security {
+      //margin-top: 4rem;
+      //
+      //.about-intro__image-block {
+      //  width: 63.5rem;
+      //  height: 61rem;
+      //  border-radius: 0;
+      //  margin-right: 0;
+      //  background: none;
+      //  box-shadow: none;
+      //
+      //  > img {
+      //    width: 100%;
+      //    height: 100%;
+      //    object-fit: contain;
+      //  }
+      //}
+    }
+
+    &--news {
+      //margin-top: 4rem;
+      //
+      //.about-intro__image-block {
+      //  width: 81.4rem;
+      //  height: 43.6rem;
+      //  border-radius: 0;
+      //  margin-right: 0;
+      //  background: none;
+      //  box-shadow: none;
+      //
+      //  > img {
+      //    width: 100%;
+      //    height: 100%;
+      //    object-fit: contain;
+      //  }
+      //}
+    }
+
+    &__bg {
+    }
+
+    &__container {
+      display: block;
+    }
+
+    &__text-block {
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 17rem;
+    }
+
+    &__title {
+      margin-bottom: 0;
+      font-weight: 700;
+      font-size: 5.2rem;
+    }
+
+    &__image-block {
+      width: 46.4rem;
+      height: 46.4rem;
+      margin-right: 0;
+      margin-left: 17.3rem;
+      box-shadow: -2.4rem -3.4rem 5.4rem 0 rgba(172, 60, 225, 0.76) inset, 0 1.4rem 2.7rem 0 rgba(194, 255, 255, 0.25) inset, 0 0 1.6rem 0 rgba(255, 255, 255, 0.26) inset;
+    }
+
+    &__main-img {
+    }
+
+    &__box {
+      border-radius: 2.5rem;
+
+      &--users {
+        left: -18.4rem;
+        top: 1.5rem;
+        width: 20rem;
+
+        &:before {
+          backdrop-filter: blur(25px);
+        }
+
+        .about-intro__text {
+          margin-bottom: 1.5rem;
+          font-size: 1.8rem;
+
+          &--gradient {
+            margin-bottom: 2rem;
+            font-size: 3.8rem;
+          }
+        }
+      }
+
+      &--crypto {
+        left: -15.8rem;
+        bottom: 8rem;
+        padding: 1rem 2.2rem;
+        font-size: 1.8rem;
+
+        &:before {
+          backdrop-filter: blur(17px);
+        }
+      }
+
+      &--no-risk {
+        right: -9.6rem;
+        top: 0.4rem;
+        width: 14rem;
+        padding: 2.2rem 2.4rem 1.4rem 2.4rem;
+        backdrop-filter: blur(20px);
+
+        .about-intro__icon {
+          width: 2.8rem;
+          height: 2.8rem;
+          margin-bottom: 1.4rem;
+        }
+
+        .about-intro__text {
+          width: 100%;
+          font-weight: 700;
+          font-size: 1.8rem;
+          line-height: 2.6rem;
+        }
+      }
+
+      &--working {
+        right: -12rem;
+        bottom: -0.7rem;
+        width: 15.6rem;
+        padding: 2rem 0 1.4rem 0;
+        backdrop-filter: blur(17px);
+
+        .about-intro__icon {
+          width: 4rem;
+          height: 4rem;
+          margin-bottom: 0.7rem;
+        }
+
+        .about-intro__text {
+          width: 10rem;
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    &__users-img-box {
+      width: 9.8rem;
+      height: 9.8rem;
+      margin-top: -3.6rem;
+      margin-bottom: 4rem;
+      box-shadow: 0.5rem 1.2rem 5rem 0 #D1D2E4;
+
+      &:before {
+        width: 11.5rem;
+        height: 11.5rem;
+      }
+
+      &:after {
+        width: 13.3rem;
+        height: 13.3rem;
+      }
+    }
+
+    &__users-circle {
+      width: 3.2rem;
+      height: 3.2rem;
+      padding-bottom: 0.8rem;
+      margin-bottom: -1.6rem;
+      font-size: 2.6rem;
+    }
+
+    &__text {
+      &--gradient {
+      }
+    }
+
+    &__icon {
+    }
   }
 }
