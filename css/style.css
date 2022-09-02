@@ -3740,6 +3740,17 @@ body {
     margin-top: 10rem;
     margin-bottom: 24rem;
   }
+  .about-intro--security {
+    margin-top: 7rem;
+  }
+  .about-intro--security .about-intro__image-block {
+    width: 100%;
+    height: 72rem;
+    margin: 0;
+  }
+  .about-intro--security .about-intro__text-block {
+    margin-bottom: 12rem;
+  }
   .about-intro__container {
     display: block;
   }
