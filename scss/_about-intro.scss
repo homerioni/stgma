@@ -314,22 +314,17 @@
     }
 
     &--news {
-      //margin-top: 4rem;
-      //
-      //.about-intro__image-block {
-      //  width: 81.4rem;
-      //  height: 43.6rem;
-      //  border-radius: 0;
-      //  margin-right: 0;
-      //  background: none;
-      //  box-shadow: none;
-      //
-      //  > img {
-      //    width: 100%;
-      //    height: 100%;
-      //    object-fit: contain;
-      //  }
-      //}
+      margin-top: 7rem;
+
+      .about-intro__image-block {
+        width: 100%;
+        height: 42rem;
+        margin: 0;
+      }
+
+      .about-intro__text-block {
+        margin-bottom: 12rem;
+      }
     }
 
     &__bg {
