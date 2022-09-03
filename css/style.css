@@ -4877,6 +4877,29 @@ body {
      object-fit: contain;
 }
 
+@media (max-width: 48em) {
+  .bug-intro {
+    margin-bottom: 24rem;
+  }
+  .bug-intro__container {
+    display: block;
+  }
+  .bug-intro__title {
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+  }
+  .bug-intro__desc {
+    width: 61rem;
+    margin-bottom: 7rem;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+  }
+  .bug-intro__img-box {
+    width: 100%;
+    height: 68rem;
+  }
+}
 .bug-require {
   margin-bottom: 18rem;
 }
@@ -5031,6 +5054,82 @@ body {
   height: 22rem;
 }
 
+@media (max-width: 48em) {
+  .bug-require {
+    margin-bottom: 24rem;
+  }
+  .bug-require__title-box {
+    display: block;
+    margin-bottom: 4rem;
+  }
+  .bug-require__title {
+    width: 100%;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+  }
+  .bug-require__desc {
+    width: 100%;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    text-align: left;
+  }
+  .bug-require__content {
+    display: block;
+  }
+  .bug-require__list-box {
+    width: 100%;
+    margin-bottom: 7rem;
+  }
+  .bug-require__list-desc {
+    margin-bottom: 4rem;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+  }
+  .bug-require__list-item:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  .bug-require__item-number {
+    width: 7rem;
+    margin-right: 2rem;
+    font-size: 2.8rem;
+  }
+  .bug-require__item-text {
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+  }
+  .bug-require__img-box {
+    width: 100%;
+    height: 46.6rem;
+    padding-left: 5rem;
+    border-radius: 2rem;
+  }
+  .bug-require__img-text-box {
+    left: 0;
+    bottom: -4rem;
+    width: 34rem;
+    min-height: 13rem;
+    padding: 0 4rem;
+  }
+  .bug-require__img-text-box:before {
+    -webkit-backdrop-filter: blur(6rem);
+            backdrop-filter: blur(6rem);
+  }
+  .bug-require__img-text {
+    width: 17.6rem;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+  }
+  .bug-require__img-icon {
+    width: 6rem;
+    height: 6rem;
+  }
+  .bug-require__img-icon > img {
+    width: 26rem;
+    height: 26rem;
+  }
+}
 .feedback {
   margin-bottom: 13rem;
 }
@@ -5277,6 +5376,111 @@ body {
   background-color: rgb(39, 41, 51);
 }
 
+@media (max-width: 48em) {
+  .feedback {
+    margin-bottom: 24rem;
+  }
+  .feedback__content {
+    padding: 7rem 4rem;
+    border-radius: 2rem;
+  }
+  .feedback__title {
+    margin-bottom: 7rem;
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+  }
+  .feedback__form-item {
+    width: 100%;
+    margin-top: 0;
+  }
+  .feedback__form-item:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  .feedback__input-title {
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+  }
+  .feedback__label {
+    height: 10.8rem;
+    padding: 0 4rem;
+  }
+  .feedback__select {
+    font-size: 2.8rem;
+  }
+  .feedback__select-arrow {
+    right: 4rem;
+    width: 2.6rem;
+    height: 4.4rem;
+  }
+  .feedback__input {
+    font-size: 2.8rem;
+  }
+  .feedback__submit-block {
+    display: block;
+    margin-top: 3rem;
+  }
+  .feedback__load-label {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-bottom: 2rem;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+  }
+  .feedback__load-icon {
+    width: 4.2rem;
+    height: 4.2rem;
+    margin-right: 2.2rem;
+  }
+  .feedback__load-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    margin-bottom: 7rem;
+  }
+  .feedback__file {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: auto;
+    height: 10.8rem;
+    padding: 1.6rem 1.6rem 1.6rem 6rem;
+    margin-right: 0;
+  }
+  .feedback__file-name {
+    font-size: 2.8rem;
+  }
+  .feedback__file-name > svg {
+    width: 4.2rem;
+    height: 4.2rem;
+    margin-right: 2rem;
+  }
+  .feedback__file-name > span {
+    display: block;
+    max-width: 39.6rem;
+  }
+  .feedback__file-del {
+    width: 7.6rem;
+    height: 7.6rem;
+    margin-left: 6rem;
+  }
+  .feedback__file-del > svg {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
