@@ -516,6 +516,16 @@ input[type=number] {
     padding: 1rem 0;
     border-radius: 4rem;
   }
+  .table__favorite-btn {
+    position: absolute;
+    left: 4rem;
+    top: 4.4rem;
+  }
+  .table__favorite-btn > svg {
+    width: 5rem;
+    height: 5rem;
+  }
+
   .tabs-table__tab {
     min-width: auto;
     height: 18rem;
@@ -1397,6 +1407,15 @@ body {
 @media (max-width: 48em) {
   .crypto {
     margin-bottom: 24rem;
+  }
+  .crypto--markets .table__content {
+    padding: 2rem 0;
+  }
+  .crypto--markets .table__row {
+    padding-left: 13rem;
+  }
+  .crypto--markets .crypto__table .table__column:nth-child(n) {
+    width: 100%;
   }
   .crypto__title-block {
     display: block;

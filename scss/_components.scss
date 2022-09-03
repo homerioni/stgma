@@ -392,20 +392,14 @@
     }
 
     &__favorite-btn {
-      //> svg {
-      //  width: 2.5rem;
-      //  height: 2.3rem;
-      //
-      //  path {
-      //    fill: white;
-      //  }
-      //}
-      //
-      //&.active {
-      //  > svg path {
-      //    fill: #FF93BD;
-      //  }
-      //}
+      position: absolute;
+      left: 4rem;
+      top: 4.4rem;
+
+      > svg {
+        width: 5rem;
+        height: 5rem;
+      }
     }
   }
 
