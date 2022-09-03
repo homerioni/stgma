@@ -4800,6 +4800,36 @@ body {
   font-size: 1.8rem;
 }
 
+@media (max-width: 48em) {
+  .doc-page {
+    margin-top: 7rem;
+    margin-bottom: 24rem;
+  }
+  .doc-page__container {
+    width: 100%;
+  }
+  .doc-page__container > *:not(:last-child, :first-child) {
+    margin-bottom: 4rem;
+  }
+  .doc-page__title {
+    margin-bottom: 7rem;
+    font-weight: 700;
+  }
+  .doc-page__text {
+    font-size: 2.8rem;
+  }
+  .doc-page__border-block {
+    padding-left: 4rem;
+  }
+  .doc-page__list-item:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  .doc-page__number {
+    width: 7rem;
+    margin-right: 2rem;
+    font-size: 2.8rem;
+  }
+}
 .bug-intro {
   margin-bottom: 18rem;
 }

@@ -60,3 +60,46 @@
     font-size: 1.8rem;
   }
 }
+
+@media (max-width: 48em) {
+  .doc-page {
+    margin-top: 7rem;
+    margin-bottom: 24rem;
+
+    &__container {
+      width: 100%;
+
+      > *:not(:last-child, :first-child) {
+        margin-bottom: 4rem;
+      }
+    }
+
+    &__title {
+      margin-bottom: 7rem;
+      font-weight: 700;
+    }
+
+    &__text {
+      font-size: 2.8rem;
+    }
+
+    &__border-block {
+      padding-left: 4rem;
+    }
+
+    &__list {
+    }
+
+    &__list-item {
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    &__number {
+      width: 7rem;
+      margin-right: 2rem;
+      font-size: 2.8rem;
+    }
+  }
+}
