@@ -23,16 +23,19 @@
   }
 
   &__link-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
     width: 8.6rem;
     height: 8.6rem;
     margin-right: 2.5rem;
 
     > img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
       width: 300%;
       height: 300%;
+      object-fit: contain;
+      transform: translate(-50%, -50%);
     }
   }
 
