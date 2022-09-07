@@ -408,10 +408,40 @@
     }
 
     &__tabs {
+      //.tabs-table__tab {
+      //  display: none;
+      //
+      //  &.active {
+      //    display: flex;
+      //  }
+      //}
+
+      overflow-x: scroll;
+
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
     }
 
+    //&__tabs-scroll {
+    //  display: flex;
+    //  margin-right: -4rem;
+    //  overflow-x: scroll;
+    //
+    //  .tabs-table__tab {
+    //    display: flex;
+    //
+    //    &.active {
+    //      display: none;
+    //    }
+    //  }
+    //}
+
     &__tab {
+      flex: none;
       min-width: auto;
+      width: fit-content;
       height: 18rem;
       padding: 0 4rem;
       border-radius: 4rem 4rem 0 0;
@@ -420,8 +450,7 @@
       &.active {
         &:first-child {
           &:before {
-            width: 4rem;
-            height: 4rem;
+            content: none;
           }
         }
       }
@@ -429,7 +458,7 @@
 
     &__tab-content {
       padding: 5rem 4rem;
-      border-radius: 4rem;
+      border-radius: 0 4rem 4rem 4rem;
     }
   }
 }

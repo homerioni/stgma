@@ -526,20 +526,32 @@ input[type=number] {
     height: 5rem;
   }
 
+  .tabs-table__tabs {
+    overflow-x: scroll;
+  }
+  .tabs-table__tabs::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
   .tabs-table__tab {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
     min-width: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     height: 18rem;
     padding: 0 4rem;
     border-radius: 4rem 4rem 0 0;
     font-size: 3.6rem;
   }
   .tabs-table__tab.active:first-child:before {
-    width: 4rem;
-    height: 4rem;
+    content: none;
   }
   .tabs-table__tab-content {
     padding: 5rem 4rem;
-    border-radius: 4rem;
+    border-radius: 0 4rem 4rem 4rem;
   }
 }
 .header__container {

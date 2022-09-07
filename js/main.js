@@ -4,8 +4,9 @@ $(document).ready(function () {
 
     // tabs for table
     $('.tabs-table__tab').click(function () {
-        $(this).parent().find('.tabs-table__tab').removeClass('active');
+        $(this).parents('.tabs-table__tabs').find('.tabs-table__tab').removeClass('active');
         $(this).addClass('active');
+        // $('.tabs-table__tab[for=' + $(this).attr('for') + ']').addClass('active');
     });
 
     $('.tabs-table__tab-content input').change(function () {
