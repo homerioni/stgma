@@ -4857,8 +4857,6 @@ body {
   left: 0;
   bottom: 0;
   z-index: -3;
-  -webkit-transform: translateY(0.8rem);
-          transform: translateY(0.8rem);
 }
 .docs__star-bg {
   position: absolute;
