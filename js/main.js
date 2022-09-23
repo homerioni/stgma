@@ -32,5 +32,16 @@ $(document).ready(function () {
         $(this).toggleClass('active');
         $('.header__burger-menu').fadeToggle(300);
     });
+    $('.header__item').click(function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).find('.header__sub-list').slideUp();
+        } else {
+            $('.header__item.active').removeClass('active');
+            $('.header__item.active .header__sub-list').slideUp();
+            $(this).addClass('active');
+            $(this).find('.header__sub-list').slideDown();
+        }
+    });
 
 });
