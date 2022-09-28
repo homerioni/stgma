@@ -44,4 +44,9 @@ $(document).ready(function () {
         }
     });
 
+    // Language list
+    $('.language-btn').click(function () {
+        $(this).find('.header__language-list').slideToggle(200);
+    });
+
 });
